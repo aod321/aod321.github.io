@@ -68,5 +68,5 @@ theme: jacman
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: git@github.com:yinzi123/yinzi123.github.io.git
-  type: git
-  branch: hexo
+  type:git
+  branch:hexo
