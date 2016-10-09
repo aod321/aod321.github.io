@@ -27,7 +27,8 @@
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
   <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+    <link rel="icon" href="<%= config.root %><%- theme.favicon %>">
   <% } %>
-  <%- css('css/style') %>
+  <%- js('style') %>
+  <%- partial('google-analytics') %>
 </head>
