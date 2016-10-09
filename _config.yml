@@ -70,6 +70,8 @@ theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy: git@github.com:aod321/aod321.github.io.git
-  type:git
-  branch:master
+
+deploy:
+  type: git
+  repo: git@github.com:aod321/aod321.github.io.git
+  branch: master
