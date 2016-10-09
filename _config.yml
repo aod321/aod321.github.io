@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: YinZi‘Blog
 subtitle:
-description:
-author: John Doe
-language:
+description: nothing is everthing
+author: YinZi
+language: zh-cn
 timezone:
 
 # URL
@@ -46,6 +46,9 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  网络: network
+  创意: diy
+  其他: other
 tag_map:
 
 # Date / Time format
@@ -63,10 +66,10 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: jacman
+theme: yilia
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-deploy: git@github.com:yinzi123/yinzi123.github.io.git
+deploy: git@github.com:aod321/aod321.github.io.git
   type:git
-  branch:hexo
+  branch:master
