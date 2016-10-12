@@ -1,7 +1,7 @@
 ---
 layout: Mac OS
 title: DELL inspiron 7447 黑苹果折腾记录
-categories: 操作系统
+categories: 计算机相关技术
 tags: Mac OS
 ---
 动机
