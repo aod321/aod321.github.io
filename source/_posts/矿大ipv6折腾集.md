@@ -54,5 +54,5 @@ tags: 免费上网
 
 ## 友情链接
 
-[黎醒聪的博客](lixingcong.github.io)
-[蔡亚刚的博客](ygcaicn.github.io)
+[黎醒聪的博客](http://lixingcong.github.io)
+[蔡亚刚的博客](http://ygcaicn.github.io)
