@@ -6,8 +6,8 @@ tags:Network
 ---
 
 ##前言
+本文是在免费学习机房分享的时候现场编写的，现在整理一下顺便发出来，其实就是搬的brewa11的github上的wiki,感兴趣的同学可以去原文看。
 
-最近事情比较多，正好最近要和大家分享一下关于代理工具的知识，懒得做PPT了，干脆就直接用Markdown写，回头还方便直接传到我的博客上面去.
 本文仅用来整理自己的步骤。
 
 ##介绍
@@ -43,7 +43,9 @@ Shadowsocks原本停止维护后，由@breakwa11继续参与维护的一个shado
 
  - 有一台装有CentOS7且接入互联网的服务器。
 
-	一般都是VPS。如果是用来学习的话国内一些厂商的学生机还是比较便宜的，比如腾讯云的1元/月，阿里云的19.9/月等等，都足够用来学学网络编程或者搭建自己的主页使用了。
+	一般都是VPS。如果是用来查阅墙外资料的话推荐国外vps，推荐Digitalocean，这家可以申请github学生优惠包，一年才5$，比较划算。DO家的新加坡线路对移动用户还是比较友好的。
+	
+	有如果是单纯用来学习如何搭建的话国内一些厂商的学生机还是比较便宜的，比如腾讯云的1元/月，阿里云的9.9/月等等，都足够用来学学网络编程或者搭建自己的主页使用了。
 
  -  有一定的Linux系统知识：ls、cd、wget、git
  - 有爱折腾的精神
@@ -51,11 +53,81 @@ Shadowsocks原本停止维护后，由@breakwa11继续参与维护的一个shado
 ###具体操作步骤
 - 连接上VPS，ssh
 
+- 输入命令
 > ` yum install git
    ` 
-   
-   
-   
-   
+> ` git clone -b manyuser https://github.com/shadowsocksr/shadowsocksr.git
+   ` 
 
- 
+执行完毕后此目录会新建一个shadowsocksr目录，其中根目录的是多用户版（即数据库版，个人用户请忽略这个），子目录中的是单用户版(即shadowsocksr/shadowsocks)。
+
+根目录即 ./shadowsocksr
+
+子目录即 ./shadowsocksr/shadowsocks
+
+进入根目录初始化配置(假设根目录在~/shadowsocksr，如果不是，命令需要适当调整)：
+
+> ` cd ~/shadowsocksr
+   ` 	
+> `bash initcfg.sh
+	`
+
+以下步骤要进入子目录：
+
+> `cd ~/shadowsocksr/shadowsocks
+	`
+
+修改user-config.json中的server_port，password等字段，具体可参见：
+[config.json](https://github.com/breakwa11/shadowsocks-rss/wiki/config.json)
+
+> `python server.py
+`
+
+如果要在后台运行：
+>`python server.py -d start
+`
+
+>`python server.py -d stop/restart
+`
+
+防火墙设置
+
+运行server.py后发现客户端仍然连接不上，因为指定端口没有开放。
+CentOS7以后默认防火墙从原来的iptables变成了firewalld，开放端口的命令如下:
+
+> `firewall-cmd --zone=public --add-port=端口/tcp --permanent
+`
+
+把端口换成自行设置的ServerPort即可。
+
+###设置开机启动
+
+以上步骤完成后，应该就可以愉快地使用ssr了，不过每次开机都需要手动运行比较麻烦，这里还需要配置一下开机自启。
+
+```
+[Unit]
+Description=ShadowsocksR server
+After=network.target
+Wants=network.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/shadowsocks.pid
+ExecStart=/usr/bin/python /usr/local/shadowsocksr/shadowsocks/server.py --pid-file /var/run/shadowsocks.pid -c /etc/shadowsocks.json -d start
+ExecStop=/usr/bin/python /usr/local/shadowsocksr/shadowsocks/server.py --pid-file /var/run/shadowsocks.pid -c /etc/shadowsocks.json -d stop
+ExecReload=/bin/kill -HUP $MAINPID
+KillMode=process
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+```
+
+请将上述脚本保存为/etc/systemd/system/shadowsocks.service
+
+
+并执行systemctl enable shadowsocks.service && systemctl start shadowsocks.service
+
+--
+### Done!Enjoy it ~
