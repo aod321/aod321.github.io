@@ -2,7 +2,7 @@
 layout: IPV6
 title: IPV6折腾集
 categories: IPV6
-tags: 免费上网
+tags: IPV6
 ---
 
 
@@ -34,7 +34,7 @@ tags: 免费上网
 
 > - 什么是IPV6
 > - IPV6有什么用？
-> - 矿大IPV6网络结构浅析
+> - 博主学校的IPV6网络结构浅析
 
 ### 实践篇
 
