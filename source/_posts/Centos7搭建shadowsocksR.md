@@ -1,18 +1,20 @@
 ---
+
 layout: Network
 title: Centos7搭建shadowsocksR
 categories: 计算机相关技术
-tags:Network
+tags: Network
+
 ---
 
-##前言
+## 前言
 本文是在免费学习机房分享的时候现场编写的，现在整理一下顺便发出来，其实就是搬的brewa11的github上的wiki,感兴趣的同学可以去原文看。
 
 本文仅用来整理自己的步骤。
 
-##介绍
+## 介绍
 
-###Shadowsocks
+### Shadowsocks
 
 >Shadowsocks（中文名称：影梭）是使用Python、C++、C#等语言开发的、基于Apache许可证的开放源代码软件，用于保护网络流量、加密数据传输。Shadowsocks使用Socks5代理方式。
 Shadowsocks分为服务器端和客户端。在使用之前，需要先将服务器端部署到服务器上面，然后通过客户端连接并创建本地代理。
@@ -20,11 +22,11 @@ Shadowsocks分为服务器端和客户端。在使用之前，需要先将服务
 
 ![Shadowsocks](https://upload.wikimedia.org/wikipedia/commons/8/8d/Shadowsocks_logo.png)
 
-###Shadowsocks-RSS
+### Shadowsocks-RSS
 
 Shadowsocks原本停止维护后，由@breakwa11继续参与维护的一个shadowsocks的版本。
 
-##搭建方法
+## 搭建方法
 
  - 脚本一键安装
 
@@ -37,9 +39,9 @@ Shadowsocks原本停止维护后，由@breakwa11继续参与维护的一个shado
 [Server-Setup](https://github.com/breakwa11/shadowsocks-rss/wiki/Server-Setup)
 在这里针对CentOS7简单地记录一下过程。
 
-##手动安装的步骤
+## 手动安装的步骤
 
-###需要条件
+### 需要条件
 
  - 有一台装有CentOS7且接入互联网的服务器。
 
@@ -50,7 +52,7 @@ Shadowsocks原本停止维护后，由@breakwa11继续参与维护的一个shado
  -  有一定的Linux系统知识：ls、cd、wget、git
  - 有爱折腾的精神
  
-###具体操作步骤
+### 具体操作步骤
 - 连接上VPS，ssh
 
 - 输入命令
@@ -100,7 +102,7 @@ CentOS7以后默认防火墙从原来的iptables变成了firewalld，开放端�
 
 把端口换成自行设置的ServerPort即可。
 
-###设置开机启动
+### 设置开机启动
 
 以上步骤完成后，应该就可以愉快地使用ssr了，不过每次开机都需要手动运行比较麻烦，这里还需要配置一下开机自启。
 
@@ -130,4 +132,5 @@ WantedBy=multi-user.target
 并执行systemctl enable shadowsocks.service && systemctl start shadowsocks.service
 
 --
+
 ### Done!Enjoy it ~
