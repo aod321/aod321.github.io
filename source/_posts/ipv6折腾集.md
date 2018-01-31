@@ -4,6 +4,7 @@ title: IPV6折腾集
 date: 2018-01-20
 categories: IPV6
 tags: IPV6
+reward: true
 urlname: funwithIPV6
 ---
 
@@ -35,7 +36,7 @@ urlname: funwithIPV6
 ### 理论篇
 
 > - [了解IPV6](https://aod321.github.io/post/knowaboutipv6/)
-> - 博主学校的IPV6网络结构浅析
+> - ~~博主学校的IPV6网络结构浅析~~
 
 ### 实践篇
 
