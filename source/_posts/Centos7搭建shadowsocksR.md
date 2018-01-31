@@ -13,6 +13,8 @@ urlname: centos-installssr
 
 本文仅用来整理自己的步骤。
 
+<!-- more -->
+
 ## 介绍
 
 ### Shadowsocks

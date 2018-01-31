@@ -16,6 +16,8 @@ urlname:  7447-hackintosh
 Mac 系统获得方案
 ---
 
+<!-- more -->
+
 > * 方案1 土豪专属，直接买一台MacBook Air/Pro
 
 ![MacBook Air](http://images.apple.com/macbook-air/images/overview_hero_hero_2x.jpg)
