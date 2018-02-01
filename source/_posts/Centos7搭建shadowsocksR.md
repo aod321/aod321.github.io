@@ -2,6 +2,7 @@
 
 layout: Network
 title: Centos7搭建shadowsocksR
+comments: false
 date: 2016-12-04
 categories: 计算机相关技术
 tags: Network

@@ -2,6 +2,7 @@
 layout: Mac OS
 title: DELL inspiron 7447 黑苹果折腾记录
 date: 2016-04-05
+comments: false
 categories: 计算机相关技术
 tags: Mac OS
 urlname:  7447-hackintosh

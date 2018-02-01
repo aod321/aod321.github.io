@@ -1,8 +1,9 @@
 ---
 layout: IPV6
 title: IPV6折腾集
-date: 2018-01-20
+date: 2018-02-01
 categories: IPV6
+comments: false
 tags: IPV6
 reward: true
 urlname: funwithIPV6
@@ -40,8 +41,8 @@ urlname: funwithIPV6
 
 ### 实践篇
 
-> - 十年窗下无人问，V6资源介绍
-> - 一朝成名天下知，IPV6初识
+> - 十年窗下无人问，[V6资源介绍](https://aod321.github.io/post/v6resource/)
+> - 一朝成名天下知，[IPV6初识](https://aod321.github.io/post/basicipv6/)
 > - 路漫漫其修远兮，IPV6常规化探索（转V4）
 > - 吾将上下而求索，充分利用IPV6带宽
 > - 雄关漫道真如铁，基于Openwrt的IPV6无线转发
