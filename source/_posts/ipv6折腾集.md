@@ -4,6 +4,7 @@ title: IPV6折腾集
 date: 2018-02-01
 categories: IPV6
 comments: false
+toc: true
 tags: IPV6
 reward: true
 urlname: funwithIPV6
