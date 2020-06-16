@@ -1,3 +1,13 @@
+---
+layout: Server
+title: Kdatacenter迁移记录
+date: 2020-06-27
+comments: false
+categories: 计算机相关技术
+tags: Mac OS
+urlname:  record_of_my_migration
+---
+
 # 前言
 
 由于最近套路云翻车，Linode总是不稳定，所以我打算把个人的另一个站点以及某类工具性服务迁移到一个更加稳定的地方去。思来想去，还是得在亚洲机房找。
