@@ -1,7 +1,7 @@
 ---
 layout: Server
 title: Kdatacenter迁移记录
-date: 2020-06-27
+date: 2020-06-17
 comments: false
 categories: 计算机相关技术
 tags: Mac OS
