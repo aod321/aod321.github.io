@@ -6,7 +6,7 @@ date: 2020-06-17
 comments: false
 categories: 计算机网络
 tags: Network
-urlname:  deeply_vmess_ws_tls_on_centos6
+urlname:  deeply_vmess_ws_tls_on_centos7
 ---
 
 # 起因
