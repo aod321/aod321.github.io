@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/post/deeply_vmess_ws_tls_on_centos6/</loc>
+    <loc>http://yoursite.com/post/deeply_vmess_ws_tls_on_centos7/</loc>
     
-    <lastmod>2020-06-17T05:55:32.175Z</lastmod>
+    <lastmod>2020-06-17T06:02:24.716Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/post/record_of_my_migration/</loc>
     
-    <lastmod>2020-06-16T17:58:07.808Z</lastmod>
+    <lastmod>2020-06-17T05:59:19.610Z</lastmod>
     
   </url>
   
@@ -19,13 +19,6 @@
     <loc>http://yoursite.com/others/DELL%20inprison%207447%20%E9%BB%91%E8%8B%B9%E6%9E%9C%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95.html</loc>
     
     <lastmod>2020-06-16T17:49:52.706Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/post/rpi3-install_lcddivers/</loc>
-    
-    <lastmod>2020-06-16T17:49:52.704Z</lastmod>
     
   </url>
   
@@ -38,6 +31,13 @@
   
   <url>
     <loc>http://yoursite.com/post/knowaboutipv6/</loc>
+    
+    <lastmod>2020-06-16T17:49:52.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/post/rpi3-install_lcddivers/</loc>
     
     <lastmod>2020-06-16T17:49:52.704Z</lastmod>
     

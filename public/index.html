@@ -163,103 +163,6 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
-    <article id="Server-Kdatacenter迁移记录" class="article article-type-Server  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/post/record_of_my_migration/">Kdatacenter迁移记录</a>
-    </h1>
-  
-
-        
-        <a href="/post/record_of_my_migration/" class="archive-article-date">
-  	<time datetime="2020-06-26T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-27</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于最近套路云翻车，Linode总是不稳定，所以我打算把个人的另一个站点以及某类工具性服务迁移到一个更加稳定的地方去。思来想去，还是得在亚洲机房找。</p>
-<p>之前看网上有不少博客推荐<a href="https://www.kdatacenter.com" target="_blank" rel="noopener">Kdatacenter</a>，说是最稳定最快速的韩国VPS，速度就像是在国内访问一样，所以就想去试试。</p>
-<p>并且听说这家提供商可以给新用户20%的优惠，不过需要用户发推广：</p>
-<blockquote>
-<p>You can get some promotion codes according to quantity of links as below:</p>
-<p>*10% promotion code: 1ealink x Blog/BBS/Forum etc.</p>
-<p>*Additional 10% promotion code: 2ea links x SNS</p>
-<p>You can get 20% promotion code with 3 links:</p>
-<ul>
-<li>Your post in forum or BBS can be considered as an article in SNS.</li>
-<li>A promotion coupon is avaliable only one time. These coupons are used for recurring charge.</li>
-</ul>
-</blockquote>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Mac OS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/计算机相关技术//" class="article-tag-list-link color3">计算机相关技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/record_of_my_migration/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="Network-Centos 7部署VMESS+TCP+TLS" class="article article-type-Network  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -267,12 +170,12 @@ var _hmt = _hmt || [];
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/post/deeply_vmess_ws_tls_on_centos6/">CentOS7 部署VMESS+TCP+TLS</a>
+      <a class="article-title" href="/post/deeply_vmess_ws_tls_on_centos7/">CentOS7 部署VMESS+TCP+TLS</a>
     </h1>
   
 
         
-        <a href="/post/deeply_vmess_ws_tls_on_centos6/" class="archive-article-date">
+        <a href="/post/deeply_vmess_ws_tls_on_centos7/" class="archive-article-date">
   	<time datetime="2020-06-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-17</time>
 </a>
         
@@ -282,7 +185,7 @@ var _hmt = _hmt || [];
       
         <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>由于忍不住剁手新入一台韩国Kdatacenter的VPS，从南京联通出去的链路还是不错的，如图所示。<br><img src="https://i.loli.net/2020/06/17/tvlpqiFUckWEjsQ.png" alt="image.png"></p>
 <p>于是乎，需要给它重新配置一些东西。默认给的操作系统是CentOS6，我发工单改成了CentOS7。它家工单系统蛮有意思的，我半夜三点钟发居然十分钟后就回复了，看来是有其他时区的客服。</p>
-<p>最近发现官方社区除了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP+TLS的思路，用Haproxy作为443前端根据流量特征进行中转，具体来说就是，如果接入流量真的是http流量的话，那么就送到nginx后端，如果是其他流量的话，那么就把它送到v2ray的VMESS端口里。以前的方式是固定web path里的统统用websocket反向代理到VMESS端口。现在这种TCP+TLS的方式根据测试延迟会比以前低一些。</p>
+<p>最近发现官方社区出了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP+TLS的思路，用Haproxy作为443前端根据流量特征进行中转，具体来说就是，如果接入流量真的是http流量的话，那么就送到nginx后端，如果是其他流量的话，那么就把它送到v2ray的VMESS端口里。以前的方式是固定web path里的统统用websocket反向代理到VMESS端口。现在这种TCP+TLS的方式根据测试延迟会比以前低一些。</p>
 <p>我个人第一想法是感觉额外添加一个Haproxy出来不够美观，如果能够只用V2ray就更加优雅了。感觉应该是可行的，比如用V2ray的任意门，但是仔细想想可能是因目前V2ray的代理在TLS的实现上有问题，所以社区大佬才没有去尝试吧。之后估计V2ray core更新后就可以不用Haproxy了。最近时间紧，我就不要去探索了，2333~</p>
 <h5 id="以下所有操作默认都在root用户中执行"><a href="#以下所有操作默认都在root用户中执行" class="headerlink" title="以下所有操作默认都在root用户中执行"></a>以下所有操作默认都在root用户中执行</h5><h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h3 id="1-域名解析"><a href="#1-域名解析" class="headerlink" title="1.域名解析"></a>1.域名解析</h3><p>我的域名是在Cloudflare上解析的，登录Cloudflare，之后创建A记录到我服务器的IP即可。</p>
 <h3 id="2-安装nginx"><a href="#2-安装nginx" class="headerlink" title="2.安装nginx"></a>2.安装nginx</h3><p>最省事的方法是直接用APT或者YUM装</p>
@@ -393,7 +296,104 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/post/deeply_vmess_ws_tls_on_centos6/">展开全文 >></a>
+          <a class="article-more-a" href="/post/deeply_vmess_ws_tls_on_centos7/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="Server-Kdatacenter迁移记录" class="article article-type-Server  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/post/record_of_my_migration/">Kdatacenter迁移记录</a>
+    </h1>
+  
+
+        
+        <a href="/post/record_of_my_migration/" class="archive-article-date">
+  	<time datetime="2020-06-16T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-17</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于最近套路云翻车，Linode总是不稳定，所以我打算把个人的另一个站点以及某类工具性服务迁移到一个更加稳定的地方去。思来想去，还是得在亚洲机房找。</p>
+<p>之前看网上有不少博客推荐<a href="https://www.kdatacenter.com" target="_blank" rel="noopener">Kdatacenter</a>，说是最稳定最快速的韩国VPS，速度就像是在国内访问一样，所以就想去试试。</p>
+<p>并且听说这家提供商可以给新用户20%的优惠，不过需要用户发推广：</p>
+<blockquote>
+<p>You can get some promotion codes according to quantity of links as below:</p>
+<p>*10% promotion code: 1ealink x Blog/BBS/Forum etc.</p>
+<p>*Additional 10% promotion code: 2ea links x SNS</p>
+<p>You can get 20% promotion code with 3 links:</p>
+<ul>
+<li>Your post in forum or BBS can be considered as an article in SNS.</li>
+<li>A promotion coupon is avaliable only one time. These coupons are used for recurring charge.</li>
+</ul>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Mac OS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/计算机相关技术//" class="article-tag-list-link color3">计算机相关技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/record_of_my_migration/">展开全文 >></a>
         </p>
       
 
