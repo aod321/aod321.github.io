@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-06-17T06:06:17.869Z</updated>
+  <updated>2020-06-17T06:15:18.928Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>CentOS7 部署VMESS+TCP+TLS</title>
-    <link href="http://yoursite.com/post/deeply_vmess_ws_tls_on_centos7/"/>
-    <id>http://yoursite.com/post/deeply_vmess_ws_tls_on_centos7/</id>
+    <link href="http://yoursite.com/post/depoly_vmess_tcp_tls_on_centos7/"/>
+    <id>http://yoursite.com/post/depoly_vmess_tcp_tls_on_centos7/</id>
     <published>2020-06-16T16:00:00.000Z</published>
-    <updated>2020-06-17T06:06:17.869Z</updated>
+    <updated>2020-06-17T06:15:18.928Z</updated>
     
     <content type="html"><![CDATA[<h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>由于忍不住剁手新入一台韩国Kdatacenter的VPS，从南京联通出去的链路还是不错的，如图所示。<br><img src="https://i.loli.net/2020/06/17/tvlpqiFUckWEjsQ.png" alt="image.png"></p>
 <p>于是乎，需要给它重新配置一些东西。默认给的操作系统是CentOS6，我发工单改成了CentOS7。它家工单系统蛮有意思的，我半夜三点钟发居然十分钟后就回复了，看来是有其他时区的客服。</p>
