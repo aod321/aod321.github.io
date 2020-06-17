@@ -18,7 +18,7 @@ urlname:  depoly_vmess_tcp_tls_on_centos7
 
 最近发现官方社区出了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP+TLS的思路，用Haproxy作为443前端根据流量特征进行中转，具体来说就是，如果接入流量真的是http流量的话，那么就送到nginx后端，如果是其他流量的话，那么就把它送到v2ray的VMESS端口里。以前的方式是固定web path里的统统用websocket反向代理到VMESS端口。现在这种TCP+TLS的方式根据测试延迟会比以前低一些。
 
-我个人第一想法是感觉额外添加一个Haproxy出来不够美观，如果能够只用V2ray就更加优雅了。感觉应该是可行的，比如用V2ray的任意门，但是仔细想想可能是因目前V2ray的代理在TLS的实现上有问题，所以社区大佬才没有去尝试吧。之后估计V2ray core更新后就可以不用Haproxy了。最近时间紧，我就不要去探索了，2333~
+我个人第一想法是感觉额外添加一个Haproxy出来不够美观，~~最近时间紧，我就不要去探索了，2333~~~~   之前没看仔细，已经有人搭了只靠nginx转发的了。
 
 ##### 以下所有操作默认都在root用户中执行
 
