@@ -254,7 +254,7 @@ mkdir /run/haproxy/
 
 ##### 请注意:
 
-##### 1.务必先编译openssl 1.1.1再编译haproxy，可以通过`haproxy -vv |grep OpenSSL`查看当前编译时候openssl的版本，如果版本号不对，请指定正确版本的openssl路径后重新编译
+***1.务必先编译openssl 1.1.1再编译haproxy，可以通过`haproxy -vv |grep OpenSSL`查看当前编译时候openssl的版本，如果版本号不对，请指定正确版本的openssl路径后重新编译***
 
 ```shell
 haproxy -vv |grep OpenSSL
@@ -341,11 +341,10 @@ systemctl enable nginx
 
 ### 其他
 
-到目前为止，所有的服务就已经搭建完毕了，在浏览器里输入https://你的域名，如果能够正常访问，说明haproxy和nginx的链路已经通了，基本上就代表可以用了。VMESS的路一般不会出什么问题，这时候就可以用客户端试一下了。
+到目前为止，所有的服务就已经搭建完毕了，在浏览器里输入 https:// + 你的域名，  如果能够正常访问，说明haproxy和nginx的链路已经通了，基本上就代表可以用了。VMESS的路一般不会出什么问题，这时候就可以用客户端试一下了。
 
-客户端的配置以及一些延迟测试就不多介绍了，参考链接吧
+客户端的配置以及一些延迟测试就不多介绍了，参考[官方社区](https://guide.v2fly.org/advanced/tcp_tls_web.html)吧。
 
-> [https://guide.v2fly.org/advanced/tcp_tls_web.html#%E8%83%8C%E6%99%AF](https://guide.v2fly.org/advanced/tcp_tls_web.html#背景)
 
 # 下一步计划
 

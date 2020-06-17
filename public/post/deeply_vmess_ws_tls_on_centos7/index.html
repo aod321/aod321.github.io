@@ -17,7 +17,7 @@
 <meta property="og:description" content="起因由于忍不住剁手新入一台韩国Kdatacenter的VPS，从南京联通出去的链路还是不错的，如图所示。 于是乎，需要给它重新配置一些东西。默认给的操作系统是CentOS6，我发工单改成了CentOS7。它家工单系统蛮有意思的，我半夜三点钟发居然十分钟后就回复了，看来是有其他时区的客服。 最近发现官方社区出了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://i.loli.net/2020/06/17/tvlpqiFUckWEjsQ.png">
-<meta property="og:updated_time" content="2020-06-17T06:02:24.716Z">
+<meta property="og:updated_time" content="2020-06-17T06:06:17.869Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS7 部署VMESS+TCP+TLS">
 <meta name="twitter:description" content="起因由于忍不住剁手新入一台韩国Kdatacenter的VPS，从南京联通出去的链路还是不错的，如图所示。 于是乎，需要给它重新配置一些东西。默认给的操作系统是CentOS6，我发工单改成了CentOS7。它家工单系统蛮有意思的，我半夜三点钟发居然十分钟后就回复了，看来是有其他时区的客服。 最近发现官方社区出了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP">
@@ -237,7 +237,8 @@ var _hmt = _hmt || [];
 <p>Haproxy needs to write to <code>/run/haproxy/admin.sock</code> but it wont create the directory for you. Create the directory <code>/run/haproxy/</code> first or set <code>stats socket</code> to a different path.</p>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /run/haproxy/</span><br></pre></td></tr></table></figure>
-<h5 id="请注意"><a href="#请注意" class="headerlink" title="请注意:"></a>请注意:</h5><h5 id="1-务必先编译openssl-1-1-1再编译haproxy，可以通过haproxy-vv-grep-OpenSSL查看当前编译时候openssl的版本，如果版本号不对，请指定正确版本的openssl路径后重新编译"><a href="#1-务必先编译openssl-1-1-1再编译haproxy，可以通过haproxy-vv-grep-OpenSSL查看当前编译时候openssl的版本，如果版本号不对，请指定正确版本的openssl路径后重新编译" class="headerlink" title="1.务必先编译openssl 1.1.1再编译haproxy，可以通过haproxy -vv |grep OpenSSL查看当前编译时候openssl的版本，如果版本号不对，请指定正确版本的openssl路径后重新编译"></a>1.务必先编译openssl 1.1.1再编译haproxy，可以通过<code>haproxy -vv |grep OpenSSL</code>查看当前编译时候openssl的版本，如果版本号不对，请指定正确版本的openssl路径后重新编译</h5><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">haproxy -vv |grep OpenSSL</span><br><span class="line">----</span><br><span class="line">Built with OpenSSL version : OpenSSL 1.1.1g  21 Apr 2020</span><br><span class="line">Running on OpenSSL version : OpenSSL 1.1.1g  21 Apr 2020</span><br><span class="line">OpenSSL library supports TLS extensions : yes</span><br><span class="line">OpenSSL library supports SNI : yes</span><br><span class="line">OpenSSL library supports : TLSv1.0 TLSv1.1 TLSv1.2 TLSv1.3</span><br></pre></td></tr></table></figure>
+<h5 id="请注意"><a href="#请注意" class="headerlink" title="请注意:"></a>请注意:</h5><p><strong><em>1.务必先编译openssl 1.1.1再编译haproxy，可以通过<code>haproxy -vv |grep OpenSSL</code>查看当前编译时候openssl的版本，如果版本号不对，请指定正确版本的openssl路径后重新编译</em></strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">haproxy -vv |grep OpenSSL</span><br><span class="line">----</span><br><span class="line">Built with OpenSSL version : OpenSSL 1.1.1g  21 Apr 2020</span><br><span class="line">Running on OpenSSL version : OpenSSL 1.1.1g  21 Apr 2020</span><br><span class="line">OpenSSL library supports TLS extensions : yes</span><br><span class="line">OpenSSL library supports SNI : yes</span><br><span class="line">OpenSSL library supports : TLSv1.0 TLSv1.1 TLSv1.2 TLSv1.3</span><br></pre></td></tr></table></figure>
 <h3 id="配置v2ray服务端"><a href="#配置v2ray服务端" class="headerlink" title="配置v2ray服务端"></a>配置v2ray服务端</h3><p>安装</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -L -s https://install.direct/go.sh)</span><br></pre></td></tr></table></figure>
 <p>配置<br><code>vim /etc/v2ray/config.json</code></p>
@@ -250,11 +251,8 @@ var _hmt = _hmt || [];
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">  listen 8080;</span><br><span class="line">  server_name example.com;		#记得改成你自己的域名</span><br><span class="line">  root /var/www/html;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>重启服务端</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart nginx</span><br><span class="line"><span class="meta">#</span><span class="bash"> 开机自启</span></span><br><span class="line">systemctl enable nginx</span><br></pre></td></tr></table></figure>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>到目前为止，所有的服务就已经搭建完毕了，在浏览器里输入<a href="https://你的域名，如果能够正常访问，说明haproxy和nginx的链路已经通了，基本上就代表可以用了。VMESS的路一般不会出什么问题，这时候就可以用客户端试一下了。" target="_blank" rel="noopener">https://你的域名，如果能够正常访问，说明haproxy和nginx的链路已经通了，基本上就代表可以用了。VMESS的路一般不会出什么问题，这时候就可以用客户端试一下了。</a></p>
-<p>客户端的配置以及一些延迟测试就不多介绍了，参考链接吧</p>
-<blockquote>
-<p><a href="https://guide.v2fly.org/advanced/tcp_tls_web.html#背景" target="_blank" rel="noopener">https://guide.v2fly.org/advanced/tcp_tls_web.html#%E8%83%8C%E6%99%AF</a></p>
-</blockquote>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>到目前为止，所有的服务就已经搭建完毕了，在浏览器里输入 https:// + 你的域名，  如果能够正常访问，说明haproxy和nginx的链路已经通了，基本上就代表可以用了。VMESS的路一般不会出什么问题，这时候就可以用客户端试一下了。</p>
+<p>客户端的配置以及一些延迟测试就不多介绍了，参考<a href="https://guide.v2fly.org/advanced/tcp_tls_web.html" target="_blank" rel="noopener">官方社区</a>吧。</p>
 <h1 id="下一步计划"><a href="#下一步计划" class="headerlink" title="下一步计划"></a>下一步计划</h1><p>1.整个一套配置下来还是很繁琐的。我打算之后写一套docker-compose，以方便复用。</p>
 <p>2.这个机器有100G硬盘呢，反正暂时又不建站，不如下一步在上面建个图床玩玩</p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>1.<a href="https://www.cnblogs.com/stulzq/p/9291223.html" target="_blank" rel="noopener">CentOS 7 源码编译安装 Nginx</a></p>
