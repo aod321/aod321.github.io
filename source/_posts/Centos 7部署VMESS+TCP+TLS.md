@@ -345,6 +345,17 @@ systemctl enable nginx
 
 客户端的配置以及一些延迟测试就不多介绍了，参考[官方社区](https://guide.v2fly.org/advanced/tcp_tls_web.html)吧。
 
+# 使用体验
+
+油管1080P随便拽，4k流畅秒开，可以看奈飞
+
+油管4k
+
+![image.png](https://i.loli.net/2020/06/17/GHRKqbBelJAC34k.png)
+Netflix
+![image.png](https://i.loli.net/2020/06/17/IHzUFPDVqvuhTWQ.png)
+
+
 
 # 下一步计划
 

@@ -17,7 +17,9 @@
 <meta property="og:description" content="起因由于忍不住剁手新入一台韩国Kdatacenter的VPS，从南京联通出去的链路还是不错的，如图所示。 于是乎，需要给它重新配置一些东西。默认给的操作系统是CentOS6，我发工单改成了CentOS7。它家工单系统蛮有意思的，我半夜三点钟发居然十分钟后就回复了，看来是有其他时区的客服。 最近发现官方社区出了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP">
 <meta property="og:locale" content="zh-cn">
 <meta property="og:image" content="https://i.loli.net/2020/06/17/tvlpqiFUckWEjsQ.png">
-<meta property="og:updated_time" content="2020-06-17T07:07:36.080Z">
+<meta property="og:image" content="https://i.loli.net/2020/06/17/GHRKqbBelJAC34k.png">
+<meta property="og:image" content="https://i.loli.net/2020/06/17/IHzUFPDVqvuhTWQ.png">
+<meta property="og:updated_time" content="2020-06-17T07:51:26.854Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS7 部署VMESS+TCP+TLS">
 <meta name="twitter:description" content="起因由于忍不住剁手新入一台韩国Kdatacenter的VPS，从南京联通出去的链路还是不错的，如图所示。 于是乎，需要给它重新配置一些东西。默认给的操作系统是CentOS6，我发工单改成了CentOS7。它家工单系统蛮有意思的，我半夜三点钟发居然十分钟后就回复了，看来是有其他时区的客服。 最近发现官方社区出了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP">
@@ -253,6 +255,9 @@ var _hmt = _hmt || [];
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart nginx</span><br><span class="line"><span class="meta">#</span><span class="bash"> 开机自启</span></span><br><span class="line">systemctl enable nginx</span><br></pre></td></tr></table></figure>
 <h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>到目前为止，所有的服务就已经搭建完毕了，在浏览器里输入 https:// + 你的域名，  如果能够正常访问，说明haproxy和nginx的链路已经通了，基本上就代表可以用了。VMESS的路一般不会出什么问题，这时候就可以用客户端试一下了。</p>
 <p>客户端的配置以及一些延迟测试就不多介绍了，参考<a href="https://guide.v2fly.org/advanced/tcp_tls_web.html" target="_blank" rel="noopener">官方社区</a>吧。</p>
+<h1 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h1><p>油管1080P随便拽，4k流畅秒开，可以看奈飞</p>
+<p>油管4k</p>
+<p><img src="https://i.loli.net/2020/06/17/GHRKqbBelJAC34k.png" alt="image.png"><br>Netflix<br><img src="https://i.loli.net/2020/06/17/IHzUFPDVqvuhTWQ.png" alt="image.png"></p>
 <h1 id="下一步计划"><a href="#下一步计划" class="headerlink" title="下一步计划"></a>下一步计划</h1><p>1.整个一套配置下来还是很繁琐的。我打算之后写一套docker-compose，以方便复用。</p>
 <p>2.这个机器有100G硬盘呢，反正暂时又不建站，不如下一步在上面建个图床玩玩</p>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>1.<a href="https://www.cnblogs.com/stulzq/p/9291223.html" target="_blank" rel="noopener">CentOS 7 源码编译安装 Nginx</a></p>
