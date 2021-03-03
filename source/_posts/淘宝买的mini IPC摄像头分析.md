@@ -1,4 +1,14 @@
-# 淘宝买的mini IPC摄像头分析
+---
+
+layout: Diy
+title: 淘宝买的mini IPC摄像头分析
+comments: false
+date: 2019-12-13
+categories: Diy
+tags: Others
+urlname: analysis-of-a-mini-camera
+---
+
 
 一个超级mini的摄像头，带夜视、H.264编码、低功耗声称可以续航三天
 
