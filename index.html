@@ -163,70 +163,6 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-淘宝买的mini IPC摄像头分析" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="淘宝买的mini-IPC摄像头分析"><a href="#淘宝买的mini-IPC摄像头分析" class="headerlink" title="淘宝买的mini IPC摄像头分析"></a>淘宝买的mini IPC摄像头分析</h1><p>一个超级mini的摄像头，带夜视、H.264编码、低功耗声称可以续航三天</p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923001151881.png" alt="image-20190923001151881"></p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923001203049.png" alt="image-20190923001203049"></p>
-<p>拆开看是这样</p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923001216989.png" alt="image-20190923001216989"></p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923001224351.png" alt="image-20190923001224351"></p>
-<p>用的这个芯片很有意思</p>
-<p>北京君正芯片</p>
-<p><img src="http://img.mp.itc.cn/upload/20170424/9b77e860de47463eae9494bf8adc0786_th.jpeg" alt="img"></p>
-<p>大概抓包分析了一下，貌似是直接把TLS加密的内容用Raw UDP传送。</p>
-<p>首先我发现它提供APP上有一个推送新证书的功能，通过抓包成功地把证书和私钥给拿了下来。</p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923001727840.png" alt="image-20190923001727840"></p>
-<p>然后发现它UDP端口每次都会变，而且APP支持局域网搜索，所以我猜想肯定是有UDP广播，所以就抓广播包，果然抓到了关键信息。这个XML文件的信息量很大，表明了它是用onvif协议（表示在看到这个关键词的时候都不知道这啥啊，搜一下才知道原来是一个定好的标准协议，我之前还以为是作者自定义的协议。毕竟不了解IP摄像头行业，2333）</p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923002052357.png" alt="image-20190923002052357"></p>
-<p>另外，我还发现了这个板子的串口，哈哈哈，这意味着可以直接拿到shell了，回头焊个排针引出来然后把ssh 打开，真是捡到宝了，开心～</p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923002550162.png" alt="image-20190923002550162"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这个摄像头的设计很简单又紧凑，值得学习。这个小体积和续航非常符合我的要求，下一步的目标就是对它进行二次开发了～ 加个人脸识别啥的,真是太美好了～～</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/post/undefined/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="AI-学习Einsum和Einops" class="article article-type-AI  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -842,7 +778,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ConfusingMind</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">脑子不好史</a>
         		</li>
       		
 		</ul>
@@ -864,6 +800,107 @@ var _hmt = _hmt || [];
       
         <p class="article-more-link">
           <a class="article-more-a" href="/post/I-am-not-me/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="Diy-淘宝买的mini IPC摄像头分析" class="article article-type-Diy  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/post/analysis-of-a-mini-camera/">淘宝买的mini IPC摄像头分析</a>
+    </h1>
+  
+
+        
+        <a href="/post/analysis-of-a-mini-camera/" class="archive-article-date">
+  	<time datetime="2019-12-12T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-12-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一个超级mini的摄像头，带夜视、H.264编码、低功耗声称可以续航三天</p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001151881.png" alt="image-20190923001151881"></p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001203049.png" alt="image-20190923001203049"></p>
+<p>拆开看是这样</p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001216989.png" alt="image-20190923001216989"></p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001224351.png" alt="image-20190923001224351"></p>
+<p>用的这个芯片很有意思</p>
+<p>北京君正芯片</p>
+<p><img src="http://img.mp.itc.cn/upload/20170424/9b77e860de47463eae9494bf8adc0786_th.jpeg" alt="img"></p>
+<p>大概抓包分析了一下，貌似是直接把TLS加密的内容用Raw UDP传送。</p>
+<p>首先我发现它提供APP上有一个推送新证书的功能，通过抓包成功地把证书和私钥给拿了下来。</p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001727840.png" alt="image-20190923001727840"></p>
+<p>然后发现它UDP端口每次都会变，而且APP支持局域网搜索，所以我猜想肯定是有UDP广播，所以就抓广播包，果然抓到了关键信息。这个XML文件的信息量很大，表明了它是用onvif协议（表示在看到这个关键词的时候都不知道这啥啊，搜一下才知道原来是一个定好的标准协议，我之前还以为是作者自定义的协议。毕竟不了解IP摄像头行业，2333）</p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923002052357.png" alt="image-20190923002052357"></p>
+<p>另外，我还发现了这个板子的串口，哈哈哈，这意味着可以直接拿到shell了，回头焊个排针引出来然后把ssh 打开，真是捡到宝了，开心～</p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923002550162.png" alt="image-20190923002550162"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这个摄像头的设计很简单又紧凑，值得学习。这个小体积和续航非常符合我的要求，下一步的目标就是对它进行二次开发了～ 加个人脸识别啥的,真是太美好了～～</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Others</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Diy//" class="article-tag-list-link color4">Diy</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/post/analysis-of-a-mini-camera/">展开全文 >></a>
         </p>
       
 
@@ -1138,7 +1175,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ConfusingMind</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">脑子不好史</a>
         		</li>
       		
 		</ul>
@@ -1319,11 +1356,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">电子</a>
+                <a href="javascript:void(0)" class="js-tag color2">Mac OS</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Mac OS</a>
+                <a href="javascript:void(0)" class="js-tag color3">电子</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1339,7 +1376,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ConfusingMind</a>
+                <a href="javascript:void(0)" class="js-tag color1">脑子不好史</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -1347,7 +1384,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">脑子不好史</a>
+                <a href="javascript:void(0)" class="js-tag color2">Others</a>
               </li>
             
             <div class="clearfix"></div>

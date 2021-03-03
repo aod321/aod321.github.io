@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2021-03-03T07:05:29.190Z</updated>
+  <updated>2021-03-03T07:41:08.869Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,41 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="http://yoursite.com/post/undefined/"/>
-    <id>http://yoursite.com/post/undefined/</id>
-    <published>2021-03-03T07:05:29.189Z</published>
-    <updated>2021-03-03T07:05:29.190Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="淘宝买的mini-IPC摄像头分析"><a href="#淘宝买的mini-IPC摄像头分析" class="headerlink" title="淘宝买的mini IPC摄像头分析"></a>淘宝买的mini IPC摄像头分析</h1><p>一个超级mini的摄像头，带夜视、H.264编码、低功耗声称可以续航三天</p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923001151881.png" alt="image-20190923001151881"></p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923001203049.png" alt="image-20190923001203049"></p>
-<p>拆开看是这样</p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923001216989.png" alt="image-20190923001216989"></p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923001224351.png" alt="image-20190923001224351"></p>
-<p>用的这个芯片很有意思</p>
-<p>北京君正芯片</p>
-<p><img src="http://img.mp.itc.cn/upload/20170424/9b77e860de47463eae9494bf8adc0786_th.jpeg" alt="img"></p>
-<p>大概抓包分析了一下，貌似是直接把TLS加密的内容用Raw UDP传送。</p>
-<p>首先我发现它提供APP上有一个推送新证书的功能，通过抓包成功地把证书和私钥给拿了下来。</p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923001727840.png" alt="image-20190923001727840"></p>
-<p>然后发现它UDP端口每次都会变，而且APP支持局域网搜索，所以我猜想肯定是有UDP广播，所以就抓广播包，果然抓到了关键信息。这个XML文件的信息量很大，表明了它是用onvif协议（表示在看到这个关键词的时候都不知道这啥啊，搜一下才知道原来是一个定好的标准协议，我之前还以为是作者自定义的协议。毕竟不了解IP摄像头行业，2333）</p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923002052357.png" alt="image-20190923002052357"></p>
-<p>另外，我还发现了这个板子的串口，哈哈哈，这意味着可以直接拿到shell了，回头焊个排针引出来然后把ssh 打开，真是捡到宝了，开心～</p>
-<p><img src="/post/undefined/yinzi/Documents/博客速记/image-20190923002550162.png" alt="image-20190923002550162"></p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这个摄像头的设计很简单又紧凑，值得学习。这个小体积和续航非常符合我的要求，下一步的目标就是对它进行二次开发了～ 加个人脸识别啥的,真是太美好了～～</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;淘宝买的mini-IPC摄像头分析&quot;&gt;&lt;a href=&quot;#淘宝买的mini-IPC摄像头分析&quot; class=&quot;headerlink&quot; title=&quot;淘宝买的mini IPC摄像头分析&quot;&gt;&lt;/a&gt;淘宝买的mini IPC摄像头分析&lt;/h1&gt;&lt;p&gt;一个超级mini的摄
-    
-    </summary>
-    
-    
-  </entry>
   
   <entry>
     <title>一起来学 Einsum，Einops</title>
@@ -328,7 +293,7 @@
     <link href="http://yoursite.com/post/I-am-not-me/"/>
     <id>http://yoursite.com/post/I-am-not-me/</id>
     <published>2020-05-22T16:00:00.000Z</published>
-    <updated>2021-03-03T07:37:47.188Z</updated>
+    <updated>2021-03-03T07:57:13.237Z</updated>
     
     <content type="html"><![CDATA[<p>我非我，即小我，及大我，何曾无我。</p>
 <p>我若成我，我亦非我。</p>
@@ -345,7 +310,47 @@
       <category term="脑子不好史" scheme="http://yoursite.com/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
     
-      <category term="ConfusingMind" scheme="http://yoursite.com/tags/ConfusingMind/"/>
+      <category term="脑子不好史" scheme="http://yoursite.com/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>淘宝买的mini IPC摄像头分析</title>
+    <link href="http://yoursite.com/post/analysis-of-a-mini-camera/"/>
+    <id>http://yoursite.com/post/analysis-of-a-mini-camera/</id>
+    <published>2019-12-12T16:00:00.000Z</published>
+    <updated>2021-03-03T07:59:00.247Z</updated>
+    
+    <content type="html"><![CDATA[<p>一个超级mini的摄像头，带夜视、H.264编码、低功耗声称可以续航三天</p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001151881.png" alt="image-20190923001151881"></p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001203049.png" alt="image-20190923001203049"></p>
+<p>拆开看是这样</p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001216989.png" alt="image-20190923001216989"></p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001224351.png" alt="image-20190923001224351"></p>
+<p>用的这个芯片很有意思</p>
+<p>北京君正芯片</p>
+<p><img src="http://img.mp.itc.cn/upload/20170424/9b77e860de47463eae9494bf8adc0786_th.jpeg" alt="img"></p>
+<p>大概抓包分析了一下，貌似是直接把TLS加密的内容用Raw UDP传送。</p>
+<p>首先我发现它提供APP上有一个推送新证书的功能，通过抓包成功地把证书和私钥给拿了下来。</p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001727840.png" alt="image-20190923001727840"></p>
+<p>然后发现它UDP端口每次都会变，而且APP支持局域网搜索，所以我猜想肯定是有UDP广播，所以就抓广播包，果然抓到了关键信息。这个XML文件的信息量很大，表明了它是用onvif协议（表示在看到这个关键词的时候都不知道这啥啊，搜一下才知道原来是一个定好的标准协议，我之前还以为是作者自定义的协议。毕竟不了解IP摄像头行业，2333）</p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923002052357.png" alt="image-20190923002052357"></p>
+<p>另外，我还发现了这个板子的串口，哈哈哈，这意味着可以直接拿到shell了，回头焊个排针引出来然后把ssh 打开，真是捡到宝了，开心～</p>
+<p><img src="/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923002550162.png" alt="image-20190923002550162"></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>这个摄像头的设计很简单又紧凑，值得学习。这个小体积和续航非常符合我的要求，下一步的目标就是对它进行二次开发了～ 加个人脸识别啥的,真是太美好了～～</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;一个超级mini的摄像头，带夜视、H.264编码、低功耗声称可以续航三天&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/post/analysis-of-a-mini-camera/yinzi/Documents/博客速记/image-20190923001151881.png&quot; a
+    
+    </summary>
+    
+      <category term="Diy" scheme="http://yoursite.com/categories/Diy/"/>
+    
+    
+      <category term="Others" scheme="http://yoursite.com/tags/Others/"/>
     
   </entry>
   
@@ -411,7 +416,7 @@
     <link href="http://yoursite.com/post/why-people-hate-change/"/>
     <id>http://yoursite.com/post/why-people-hate-change/</id>
     <published>2019-10-23T16:00:00.000Z</published>
-    <updated>2021-03-03T07:25:30.894Z</updated>
+    <updated>2021-03-03T07:57:32.752Z</updated>
     
     <content type="html"><![CDATA[<h2 id="群体学习论"><a href="#群体学习论" class="headerlink" title="群体学习论"></a>群体学习论</h2><h3 id="公理1：群体知识由个体学习结果提炼产生"><a href="#公理1：群体知识由个体学习结果提炼产生" class="headerlink" title="公理1：群体知识由个体学习结果提炼产生"></a>公理1：群体知识由个体学习结果提炼产生</h3><h3 id="公理2：个体更容易获得有更多个体经验的群体知识"><a href="#公理2：个体更容易获得有更多个体经验的群体知识" class="headerlink" title="公理2：个体更容易获得有更多个体经验的群体知识"></a>公理2：个体更容易获得有更多个体经验的群体知识</h3><h3 id="公理3-群体的知识空间是有限可数的"><a href="#公理3-群体的知识空间是有限可数的" class="headerlink" title="公理3:   群体的知识空间是有限可数的"></a>公理3:   群体的知识空间是有限可数的</h3><h3 id="群体学习方法："><a href="#群体学习方法：" class="headerlink" title="群体学习方法："></a>群体学习方法：</h3><p>这个问题很有意思，让我们来捋一捋。 </p>
 <p>现象：对一个问题，看似比主流方案更优的解决方案却不一定有更大的用户群体。</p>
@@ -457,7 +462,7 @@
       <category term="脑子不好史" scheme="http://yoursite.com/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
     
-      <category term="ConfusingMind" scheme="http://yoursite.com/tags/ConfusingMind/"/>
+      <category term="脑子不好史" scheme="http://yoursite.com/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
   </entry>
   

@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/post/analysis-of-a-mini-camera/</loc>
+    
+    <lastmod>2021-03-03T07:59:00.247Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/post/why-people-hate-change/</loc>
+    
+    <lastmod>2021-03-03T07:57:32.752Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/post/I-am-not-me/</loc>
+    
+    <lastmod>2021-03-03T07:57:13.237Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/post/learn-einsum-and-einops/</loc>
     
     <lastmod>2021-03-03T07:41:08.869Z</lastmod>
@@ -12,13 +33,6 @@
     <loc>http://yoursite.com/post/nothing-but-a-draft/</loc>
     
     <lastmod>2021-03-03T07:39:17.057Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/post/I-am-not-me/</loc>
-    
-    <lastmod>2021-03-03T07:37:47.188Z</lastmod>
     
   </url>
   
@@ -40,20 +54,6 @@
     <loc>http://yoursite.com/post/rpi3-install_lcddivers/</loc>
     
     <lastmod>2021-03-03T07:25:38.458Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/post/why-people-hate-change/</loc>
-    
-    <lastmod>2021-03-03T07:25:30.894Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/post/undefined/</loc>
-    
-    <lastmod>2021-03-03T07:05:29.190Z</lastmod>
     
   </url>
   
@@ -93,7 +93,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/post/electric/</loc>
+    <loc>http://yoursite.com/post/record_of_my_migration/</loc>
     
     <lastmod>2021-03-03T07:03:52.237Z</lastmod>
     
@@ -107,7 +107,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/post/record_of_my_migration/</loc>
+    <loc>http://yoursite.com/post/electric/</loc>
     
     <lastmod>2021-03-03T07:03:52.237Z</lastmod>
     
