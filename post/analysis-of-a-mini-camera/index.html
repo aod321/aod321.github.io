@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="http://blog.yinzi.me">
   <title>淘宝买的mini IPC摄像头分析 | YinZi‘Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一个超级mini的摄像头，带夜视、H.264编码、低功耗声称可以续航三天  拆开看是这样  用的这个芯片很有意思 北京君正芯片  大概抓包分析了一下，貌似是直接把TLS加密的内容用Raw UDP传送。 首先我发现它提供APP上有一个推送新证书的功能，通过抓包成功地把证书和私钥给拿了下来。  然后发现它UDP端口每次都会变，而且APP支持局域网搜索，所以我猜想肯定是有UDP广播，所以就抓广播包，果然">
 <meta name="keywords" content="Others">
 <meta property="og:type" content="article">
 <meta property="og:title" content="淘宝买的mini IPC摄像头分析">
-<meta property="og:url" content="http://yoursite.com/post/analysis-of-a-mini-camera/index.html">
+<meta property="og:url" content="http://blog.yinzi.me/post/analysis-of-a-mini-camera/index.html">
 <meta property="og:site_name" content="YinZi‘Blog">
 <meta property="og:description" content="一个超级mini的摄像头，带夜视、H.264编码、低功耗声称可以续航三天  拆开看是这样  用的这个芯片很有意思 北京君正芯片  大概抓包分析了一下，貌似是直接把TLS加密的内容用Raw UDP传送。 首先我发现它提供APP上有一个推送新证书的功能，通过抓包成功地把证书和私钥给拿了下来。  然后发现它UDP端口每次都会变，而且APP支持局域网搜索，所以我猜想肯定是有UDP广播，所以就抓广播包，果然">
 <meta property="og:locale" content="zh-cn">
@@ -287,7 +287,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/post/analysis-of-a-mini-camera/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://blog.yinzi.me/post/analysis-of-a-mini-camera/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -546,10 +546,6 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lixingcong.github.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>黎醒聪的博客</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://haoakun.me/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>好人的独白</a>
             </li>
           
         </ul>

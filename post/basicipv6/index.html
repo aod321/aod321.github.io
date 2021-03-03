@@ -5,30 +5,30 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://yoursite.com">
+  <link rel="dns-prefetch" href="http://blog.yinzi.me">
   <title>V6初识 | YinZi‘Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="内容介绍利用IPV6最直接的方式便是访问支持IPV6的站点，而不同高校获取IPV6地址方式不一样，很多都是上层交换机直接分配双栈的，所以只要简单配置获取一下V6公网地址就可以享受到相应的免流服务，有的学校则需要通过PPP验证来获取IPV6地址。 本章将演示如何在本地电脑上利用IPV6服务，首先讲演示如何通过PPP验证获取IPV6地址（其他高校需要具体问题具体分析，仅供参考），接着在获取到可用的IP">
 <meta name="keywords" content="IPV6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="V6初识">
-<meta property="og:url" content="http://yoursite.com/post/basicipv6/index.html">
+<meta property="og:url" content="http://blog.yinzi.me/post/basicipv6/index.html">
 <meta property="og:site_name" content="YinZi‘Blog">
 <meta property="og:description" content="内容介绍利用IPV6最直接的方式便是访问支持IPV6的站点，而不同高校获取IPV6地址方式不一样，很多都是上层交换机直接分配双栈的，所以只要简单配置获取一下V6公网地址就可以享受到相应的免流服务，有的学校则需要通过PPP验证来获取IPV6地址。 本章将演示如何在本地电脑上利用IPV6服务，首先讲演示如何通过PPP验证获取IPV6地址（其他高校需要具体问题具体分析，仅供参考），接着在获取到可用的IP">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:image" content="http://yoursite.com/post/basicipv6/1-1.png">
-<meta property="og:image" content="http://yoursite.com/post/basicipv6/1-2.png">
-<meta property="og:image" content="http://yoursite.com/post/basicipv6/1.png">
-<meta property="og:image" content="http://yoursite.com/post/basicipv6/2.png">
-<meta property="og:image" content="http://yoursite.com/post/basicipv6/3.png">
-<meta property="og:image" content="http://yoursite.com/post/basicipv6/4.png">
-<meta property="og:image" content="http://yoursite.com/post/basicipv6/5.png">
-<meta property="og:image" content="http://yoursite.com/post/basicipv6/6.png">
+<meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/1-1.png">
+<meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/1-2.png">
+<meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/1.png">
+<meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/2.png">
+<meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/3.png">
+<meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/4.png">
+<meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/5.png">
+<meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/6.png">
 <meta property="og:updated_time" content="2021-03-03T07:03:52.238Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="V6初识">
 <meta name="twitter:description" content="内容介绍利用IPV6最直接的方式便是访问支持IPV6的站点，而不同高校获取IPV6地址方式不一样，很多都是上层交换机直接分配双栈的，所以只要简单配置获取一下V6公网地址就可以享受到相应的免流服务，有的学校则需要通过PPP验证来获取IPV6地址。 本章将演示如何在本地电脑上利用IPV6服务，首先讲演示如何通过PPP验证获取IPV6地址（其他高校需要具体问题具体分析，仅供参考），接着在获取到可用的IP">
-<meta name="twitter:image" content="http://yoursite.com/post/basicipv6/1-1.png">
+<meta name="twitter:image" content="http://blog.yinzi.me/post/basicipv6/1-1.png">
   
     <link rel="alternative" href="/atom.xml" title="YinZi‘Blog" type="application/atom+xml">
   
@@ -319,7 +319,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/post/basicipv6/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://blog.yinzi.me/post/basicipv6/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -383,7 +383,7 @@ var _hmt = _hmt || [];
 <script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "http://yoursite.com/post/basicipv6/",
+  id: "http://blog.yinzi.me/post/basicipv6/",
   owner: 'aod321',
   repo: 'aod321.github.io',
   oauth: {
@@ -604,10 +604,6 @@ MathJax.Hub.Queue(function() {
           
             <li class="search-li">
               <a href="https://lixingcong.github.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>黎醒聪的博客</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://haoakun.me/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>好人的独白</a>
             </li>
           
         </ul>

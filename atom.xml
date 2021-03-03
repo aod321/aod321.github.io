@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://blog.yinzi.me/"/>
   <updated>2021-03-03T07:41:08.869Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://blog.yinzi.me/</id>
   
   <author>
     <name>YinZi</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>一起来学 Einsum，Einops</title>
-    <link href="http://yoursite.com/post/learn-einsum-and-einops/"/>
-    <id>http://yoursite.com/post/learn-einsum-and-einops/</id>
+    <link href="http://blog.yinzi.me/post/learn-einsum-and-einops/"/>
+    <id>http://blog.yinzi.me/post/learn-einsum-and-einops/</id>
     <published>2021-03-02T16:00:00.000Z</published>
     <updated>2021-03-03T07:41:08.869Z</updated>
     
@@ -86,17 +86,17 @@
     
     </summary>
     
-      <category term="AI" scheme="http://yoursite.com/categories/AI/"/>
+      <category term="AI" scheme="http://blog.yinzi.me/categories/AI/"/>
     
     
-      <category term="AI" scheme="http://yoursite.com/tags/AI/"/>
+      <category term="AI" scheme="http://blog.yinzi.me/tags/AI/"/>
     
   </entry>
   
   <entry>
     <title>MacOS Acrobat Pro DC 屏蔽更新</title>
-    <link href="http://yoursite.com/post/acrobat-updater-remove/"/>
-    <id>http://yoursite.com/post/acrobat-updater-remove/</id>
+    <link href="http://blog.yinzi.me/post/acrobat-updater-remove/"/>
+    <id>http://blog.yinzi.me/post/acrobat-updater-remove/</id>
     <published>2020-07-06T16:00:00.000Z</published>
     <updated>2021-03-03T07:03:52.237Z</updated>
     
@@ -118,17 +118,17 @@
     
     </summary>
     
-      <category term="实用技巧" scheme="http://yoursite.com/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
+      <category term="实用技巧" scheme="http://blog.yinzi.me/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/"/>
     
     
-      <category term="Adobe" scheme="http://yoursite.com/tags/Adobe/"/>
+      <category term="Adobe" scheme="http://blog.yinzi.me/tags/Adobe/"/>
     
   </entry>
   
   <entry>
     <title>CentOS7 部署VMESS+TCP+TLS</title>
-    <link href="http://yoursite.com/post/depoly_vmess_tcp_tls_on_centos7/"/>
-    <id>http://yoursite.com/post/depoly_vmess_tcp_tls_on_centos7/</id>
+    <link href="http://blog.yinzi.me/post/depoly_vmess_tcp_tls_on_centos7/"/>
+    <id>http://blog.yinzi.me/post/depoly_vmess_tcp_tls_on_centos7/</id>
     <published>2020-06-16T16:00:00.000Z</published>
     <updated>2021-03-03T07:03:52.236Z</updated>
     
@@ -220,17 +220,17 @@
     
     </summary>
     
-      <category term="计算机网络" scheme="http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+      <category term="计算机网络" scheme="http://blog.yinzi.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     
     
-      <category term="Network" scheme="http://yoursite.com/tags/Network/"/>
+      <category term="Network" scheme="http://blog.yinzi.me/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>Kdatacenter迁移记录</title>
-    <link href="http://yoursite.com/post/record_of_my_migration/"/>
-    <id>http://yoursite.com/post/record_of_my_migration/</id>
+    <link href="http://blog.yinzi.me/post/record_of_my_migration/"/>
+    <id>http://blog.yinzi.me/post/record_of_my_migration/</id>
     <published>2020-06-16T16:00:00.000Z</published>
     <updated>2021-03-03T07:03:52.237Z</updated>
     
@@ -255,17 +255,17 @@
     
     </summary>
     
-      <category term="计算机相关技术" scheme="http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF/"/>
+      <category term="计算机相关技术" scheme="http://blog.yinzi.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Mac OS" scheme="http://yoursite.com/tags/Mac-OS/"/>
+      <category term="Mac OS" scheme="http://blog.yinzi.me/tags/Mac-OS/"/>
     
   </entry>
   
   <entry>
     <title>这是个草稿</title>
-    <link href="http://yoursite.com/post/nothing-but-a-draft/"/>
-    <id>http://yoursite.com/post/nothing-but-a-draft/</id>
+    <link href="http://blog.yinzi.me/post/nothing-but-a-draft/"/>
+    <id>http://blog.yinzi.me/post/nothing-but-a-draft/</id>
     <published>2020-05-31T16:00:00.000Z</published>
     <updated>2021-03-03T07:39:17.057Z</updated>
     
@@ -281,17 +281,17 @@
     
     </summary>
     
-      <category term="脑子不好史" scheme="http://yoursite.com/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+      <category term="脑子不好史" scheme="http://blog.yinzi.me/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
     
-      <category term="脑子不好史" scheme="http://yoursite.com/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+      <category term="脑子不好史" scheme="http://blog.yinzi.me/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
   </entry>
   
   <entry>
     <title>我非我</title>
-    <link href="http://yoursite.com/post/I-am-not-me/"/>
-    <id>http://yoursite.com/post/I-am-not-me/</id>
+    <link href="http://blog.yinzi.me/post/I-am-not-me/"/>
+    <id>http://blog.yinzi.me/post/I-am-not-me/</id>
     <published>2020-05-22T16:00:00.000Z</published>
     <updated>2021-03-03T07:57:13.237Z</updated>
     
@@ -307,17 +307,17 @@
     
     </summary>
     
-      <category term="脑子不好史" scheme="http://yoursite.com/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+      <category term="脑子不好史" scheme="http://blog.yinzi.me/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
     
-      <category term="脑子不好史" scheme="http://yoursite.com/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+      <category term="脑子不好史" scheme="http://blog.yinzi.me/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
   </entry>
   
   <entry>
     <title>淘宝买的mini IPC摄像头分析</title>
-    <link href="http://yoursite.com/post/analysis-of-a-mini-camera/"/>
-    <id>http://yoursite.com/post/analysis-of-a-mini-camera/</id>
+    <link href="http://blog.yinzi.me/post/analysis-of-a-mini-camera/"/>
+    <id>http://blog.yinzi.me/post/analysis-of-a-mini-camera/</id>
     <published>2019-12-12T16:00:00.000Z</published>
     <updated>2021-03-03T08:11:07.595Z</updated>
     
@@ -345,17 +345,17 @@
     
     </summary>
     
-      <category term="Diy" scheme="http://yoursite.com/categories/Diy/"/>
+      <category term="Diy" scheme="http://blog.yinzi.me/categories/Diy/"/>
     
     
-      <category term="Others" scheme="http://yoursite.com/tags/Others/"/>
+      <category term="Others" scheme="http://blog.yinzi.me/tags/Others/"/>
     
   </entry>
   
   <entry>
     <title>随笔4-191027</title>
-    <link href="http://yoursite.com/post/totally-gibberish/"/>
-    <id>http://yoursite.com/post/totally-gibberish/</id>
+    <link href="http://blog.yinzi.me/post/totally-gibberish/"/>
+    <id>http://blog.yinzi.me/post/totally-gibberish/</id>
     <published>2019-10-26T16:00:00.000Z</published>
     <updated>2021-03-03T07:35:50.721Z</updated>
     
@@ -370,17 +370,17 @@
     
     </summary>
     
-      <category term="脑子不好史" scheme="http://yoursite.com/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+      <category term="脑子不好史" scheme="http://blog.yinzi.me/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
     
-      <category term="脑子不好史" scheme="http://yoursite.com/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+      <category term="脑子不好史" scheme="http://blog.yinzi.me/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
   </entry>
   
   <entry>
     <title>懒得起标题了</title>
-    <link href="http://yoursite.com/post/too-lazy-to-write-a-title/"/>
-    <id>http://yoursite.com/post/too-lazy-to-write-a-title/</id>
+    <link href="http://blog.yinzi.me/post/too-lazy-to-write-a-title/"/>
+    <id>http://blog.yinzi.me/post/too-lazy-to-write-a-title/</id>
     <published>2019-10-24T16:00:00.000Z</published>
     <updated>2021-03-03T07:32:52.869Z</updated>
     
@@ -402,17 +402,17 @@
     
     </summary>
     
-      <category term="脑子不好史" scheme="http://yoursite.com/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+      <category term="脑子不好史" scheme="http://blog.yinzi.me/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
     
-      <category term="脑子不好史" scheme="http://yoursite.com/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+      <category term="脑子不好史" scheme="http://blog.yinzi.me/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
   </entry>
   
   <entry>
     <title>群体学习</title>
-    <link href="http://yoursite.com/post/why-people-hate-change/"/>
-    <id>http://yoursite.com/post/why-people-hate-change/</id>
+    <link href="http://blog.yinzi.me/post/why-people-hate-change/"/>
+    <id>http://blog.yinzi.me/post/why-people-hate-change/</id>
     <published>2019-10-23T16:00:00.000Z</published>
     <updated>2021-03-03T07:57:32.752Z</updated>
     
@@ -457,17 +457,17 @@
     
     </summary>
     
-      <category term="脑子不好史" scheme="http://yoursite.com/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+      <category term="脑子不好史" scheme="http://blog.yinzi.me/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
     
-      <category term="脑子不好史" scheme="http://yoursite.com/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
+      <category term="脑子不好史" scheme="http://blog.yinzi.me/tags/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/"/>
     
   </entry>
   
   <entry>
     <title>LT3757电源控制模块学习笔记</title>
-    <link href="http://yoursite.com/post/electric/"/>
-    <id>http://yoursite.com/post/electric/</id>
+    <link href="http://blog.yinzi.me/post/electric/"/>
+    <id>http://blog.yinzi.me/post/electric/</id>
     <published>2018-07-25T05:00:08.000Z</published>
     <updated>2021-03-03T07:03:52.237Z</updated>
     
@@ -543,17 +543,17 @@
     
     </summary>
     
-      <category term="电子" scheme="http://yoursite.com/categories/%E7%94%B5%E5%AD%90/"/>
+      <category term="电子" scheme="http://blog.yinzi.me/categories/%E7%94%B5%E5%AD%90/"/>
     
     
-      <category term="电子" scheme="http://yoursite.com/tags/%E7%94%B5%E5%AD%90/"/>
+      <category term="电子" scheme="http://blog.yinzi.me/tags/%E7%94%B5%E5%AD%90/"/>
     
   </entry>
   
   <entry>
     <title>IPV6折腾集</title>
-    <link href="http://yoursite.com/post/funwithIPV6/"/>
-    <id>http://yoursite.com/post/funwithIPV6/</id>
+    <link href="http://blog.yinzi.me/post/funwithIPV6/"/>
+    <id>http://blog.yinzi.me/post/funwithIPV6/</id>
     <published>2018-01-31T16:00:00.000Z</published>
     <updated>2021-03-03T07:03:52.242Z</updated>
     
@@ -614,17 +614,17 @@
     
     </summary>
     
-      <category term="IPV6" scheme="http://yoursite.com/categories/IPV6/"/>
+      <category term="IPV6" scheme="http://blog.yinzi.me/categories/IPV6/"/>
     
     
-      <category term="IPV6" scheme="http://yoursite.com/tags/IPV6/"/>
+      <category term="IPV6" scheme="http://blog.yinzi.me/tags/IPV6/"/>
     
   </entry>
   
   <entry>
     <title>V6初识</title>
-    <link href="http://yoursite.com/post/basicipv6/"/>
-    <id>http://yoursite.com/post/basicipv6/</id>
+    <link href="http://blog.yinzi.me/post/basicipv6/"/>
+    <id>http://blog.yinzi.me/post/basicipv6/</id>
     <published>2018-01-31T11:00:32.000Z</published>
     <updated>2021-03-03T07:03:52.238Z</updated>
     
@@ -691,17 +691,17 @@
     
     </summary>
     
-      <category term="IPV6" scheme="http://yoursite.com/categories/IPV6/"/>
+      <category term="IPV6" scheme="http://blog.yinzi.me/categories/IPV6/"/>
     
     
-      <category term="IPV6" scheme="http://yoursite.com/tags/IPV6/"/>
+      <category term="IPV6" scheme="http://blog.yinzi.me/tags/IPV6/"/>
     
   </entry>
   
   <entry>
     <title>V6资源介绍</title>
-    <link href="http://yoursite.com/post/v6resource/"/>
-    <id>http://yoursite.com/post/v6resource/</id>
+    <link href="http://blog.yinzi.me/post/v6resource/"/>
+    <id>http://blog.yinzi.me/post/v6resource/</id>
     <published>2018-01-31T10:58:21.000Z</published>
     <updated>2021-03-03T07:03:52.241Z</updated>
     
@@ -730,17 +730,17 @@
     
     </summary>
     
-      <category term="IPV6" scheme="http://yoursite.com/categories/IPV6/"/>
+      <category term="IPV6" scheme="http://blog.yinzi.me/categories/IPV6/"/>
     
     
-      <category term="IPV6" scheme="http://yoursite.com/tags/IPV6/"/>
+      <category term="IPV6" scheme="http://blog.yinzi.me/tags/IPV6/"/>
     
   </entry>
   
   <entry>
     <title>了解IPV6</title>
-    <link href="http://yoursite.com/post/knowaboutipv6/"/>
-    <id>http://yoursite.com/post/knowaboutipv6/</id>
+    <link href="http://blog.yinzi.me/post/knowaboutipv6/"/>
+    <id>http://blog.yinzi.me/post/knowaboutipv6/</id>
     <published>2018-01-18T16:00:00.000Z</published>
     <updated>2021-03-03T07:03:52.242Z</updated>
     
@@ -769,17 +769,17 @@
     
     </summary>
     
-      <category term="IPV6" scheme="http://yoursite.com/categories/IPV6/"/>
+      <category term="IPV6" scheme="http://blog.yinzi.me/categories/IPV6/"/>
     
     
-      <category term="IPV6" scheme="http://yoursite.com/tags/IPV6/"/>
+      <category term="IPV6" scheme="http://blog.yinzi.me/tags/IPV6/"/>
     
   </entry>
   
   <entry>
     <title>为树莓派3安装raspbian系统与LCD屏幕驱动</title>
-    <link href="http://yoursite.com/post/rpi3-install_lcddivers/"/>
-    <id>http://yoursite.com/post/rpi3-install_lcddivers/</id>
+    <link href="http://blog.yinzi.me/post/rpi3-install_lcddivers/"/>
+    <id>http://blog.yinzi.me/post/rpi3-install_lcddivers/</id>
     <published>2017-01-11T16:00:00.000Z</published>
     <updated>2021-03-03T07:25:38.458Z</updated>
     
@@ -839,17 +839,17 @@ sudo ./LCD35-show
     
     </summary>
     
-      <category term="Diy" scheme="http://yoursite.com/categories/Diy/"/>
+      <category term="Diy" scheme="http://blog.yinzi.me/categories/Diy/"/>
     
     
-      <category term="树莓派入门" scheme="http://yoursite.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%85%A5%E9%97%A8/"/>
+      <category term="树莓派入门" scheme="http://blog.yinzi.me/tags/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%85%A5%E9%97%A8/"/>
     
   </entry>
   
   <entry>
     <title>Centos7搭建shadowsocksR</title>
-    <link href="http://yoursite.com/post/centos-installssr/"/>
-    <id>http://yoursite.com/post/centos-installssr/</id>
+    <link href="http://blog.yinzi.me/post/centos-installssr/"/>
+    <id>http://blog.yinzi.me/post/centos-installssr/</id>
     <published>2016-12-03T16:00:00.000Z</published>
     <updated>2021-03-03T07:03:52.236Z</updated>
     
@@ -926,17 +926,17 @@ sudo ./LCD35-show
     
     </summary>
     
-      <category term="计算机相关技术" scheme="http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF/"/>
+      <category term="计算机相关技术" scheme="http://blog.yinzi.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Network" scheme="http://yoursite.com/tags/Network/"/>
+      <category term="Network" scheme="http://blog.yinzi.me/tags/Network/"/>
     
   </entry>
   
   <entry>
     <title>DELL inspiron 7447 黑苹果折腾记录</title>
-    <link href="http://yoursite.com/post/7447-hackintosh/"/>
-    <id>http://yoursite.com/post/7447-hackintosh/</id>
+    <link href="http://blog.yinzi.me/post/7447-hackintosh/"/>
+    <id>http://blog.yinzi.me/post/7447-hackintosh/</id>
     <published>2016-04-04T16:00:00.000Z</published>
     <updated>2021-03-03T07:03:52.237Z</updated>
     
@@ -1019,10 +1019,10 @@ sudo ./LCD35-show
     
     </summary>
     
-      <category term="计算机相关技术" scheme="http://yoursite.com/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF/"/>
+      <category term="计算机相关技术" scheme="http://blog.yinzi.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Mac OS" scheme="http://yoursite.com/tags/Mac-OS/"/>
+      <category term="Mac OS" scheme="http://blog.yinzi.me/tags/Mac-OS/"/>
     
   </entry>
   
