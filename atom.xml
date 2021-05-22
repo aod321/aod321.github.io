@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://blog.yinzi.me/"/>
-  <updated>2021-03-03T07:41:08.869Z</updated>
+  <updated>2021-05-22T11:56:43.157Z</updated>
   <id>http://blog.yinzi.me/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>缅怀袁隆平院士</title>
+    <link href="http://blog.yinzi.me/post/may-the-fragrant-paddy%E2%80%93be-with-you/"/>
+    <id>http://blog.yinzi.me/post/may-the-fragrant-paddy–be-with-you/</id>
+    <published>2021-05-21T16:00:00.000Z</published>
+    <updated>2021-05-22T11:56:43.157Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天的心情很复杂，通宵写完代码后看到的第一个消息就是这个，真希望真的是谣言。袁隆平爷爷是我们90 后从小就在课本上看到人物，是我小时候最敬佩的科学家之一。如今我自己也在科研的学习道路上苦苦挣扎，更是深知袁隆平院士的不易和伟大。</p>
+<p>时光不会给任何人留情面，吾辈应该好好珍惜宝贵的时光，美好的时代；应该追随前辈的身影，从事科学研究直到自己生命最后一刻，就像袁爷爷一样。天堂也许也有一片水稻田吧，愿稻香常伴您。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天的心情很复杂，通宵写完代码后看到的第一个消息就是这个，真希望真的是谣言。袁隆平爷爷是我们90 后从小就在课本上看到人物，是我小时候最敬佩的科学家之一。如今我自己也在科研的学习道路上苦苦挣扎，更是深知袁隆平院士的不易和伟大。&lt;/p&gt;
+&lt;p&gt;时光不会给任何人留情面，吾辈应该
+    
+    </summary>
+    
+      <category term="君子以自强不息" scheme="http://blog.yinzi.me/categories/%E5%90%9B%E5%AD%90%E4%BB%A5%E8%87%AA%E5%BC%BA%E4%B8%8D%E6%81%AF/"/>
+    
+    
+      <category term="ConfusingMind" scheme="http://blog.yinzi.me/tags/ConfusingMind/"/>
+    
+  </entry>
   
   <entry>
     <title>一起来学 Einsum，Einops</title>
