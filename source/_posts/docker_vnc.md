@@ -1,7 +1,7 @@
 ---
 layout: Server
 title:  利用Docker VNC在无图形服务器上跑图形桌面
-date: 2018-01-31 19:00:32
+date: 2021-08-10 23:14:32
 categories: Server
 tags: Server
 urlname: nogui_linux_docker_vnc_matlab
