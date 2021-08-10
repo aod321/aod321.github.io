@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="YinZi‘Blog">
 <meta property="og:description" content="利用Docker VNC在无图形服务器上跑图形桌面现在很多服务器都是不提供用户图形界面的，但是科研人员有时候需要在服务器上运行图形界面，比如使用图形化的Matlab 处理数据等。虽然这时候可以选择安装一个 gnome 或者 xfce4 等桌面环境，但是通常服务器上是有很多用户的，这样会可能会占用一定的资源或者把环境搞乱掉，影响其他用户使用。 比较好的方案是起一个带 VNC 的 Docker 容器，">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2021-08-10T15:14:18.712Z">
+<meta property="og:updated_time" content="2021-08-10T15:19:39.053Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用Docker VNC在无图形服务器上跑图形桌面">
 <meta name="twitter:description" content="利用Docker VNC在无图形服务器上跑图形桌面现在很多服务器都是不提供用户图形界面的，但是科研人员有时候需要在服务器上运行图形界面，比如使用图形化的Matlab 处理数据等。虽然这时候可以选择安装一个 gnome 或者 xfce4 等桌面环境，但是通常服务器上是有很多用户的，这样会可能会占用一定的资源或者把环境搞乱掉，影响其他用户使用。 比较好的方案是起一个带 VNC 的 Docker 容器，">
@@ -176,7 +176,7 @@ var _hmt = _hmt || [];
 
         
         <a href="/post/nogui_linux_docker_vnc_matlab/" class="archive-article-date">
-  	<time datetime="2018-01-31T11:00:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-31</time>
+  	<time datetime="2021-08-10T15:14:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-10</time>
 </a>
         
       </header>
@@ -197,7 +197,7 @@ var _hmt = _hmt || [];
 <li><p>访问桌面后，在VNC 连上的桌面上打开一个终端，然后在该终端中输入如下命令</p>
 </li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 将APT源换成清华镜像源</span></span><br><span class="line">sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list</span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装打开图形的必要依赖：JRE</span></span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install default-jre</span><br><span class="line"><span class="meta">#</span><span class="bash"> 执行 matlab</span></span><br><span class="line">/matlab/R2021a/bin/matlab</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 将APT源换成清华镜像源</span><br><span class="line">sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list</span><br><span class="line"><span class="meta">#</span> 安装打开图形的必要依赖：JRE</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install default-jre</span><br><span class="line"><span class="meta">#</span> 执行 matlab</span><br><span class="line">/matlab/R2021a/bin/matlab</span><br></pre></td></tr></table></figure>
 
       
 
@@ -292,18 +292,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/post/basicipv6/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          V6初识
-        
-      </div>
-    </a>
   
-  
-    <a href="/post/v6resource/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">V6资源介绍</div>
+    <a href="/post/may-the-fragrant-paddy–be-with-you/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">缅怀袁隆平院士</div>
       <i class="icon-circle-right"></i>
     </a>
   
