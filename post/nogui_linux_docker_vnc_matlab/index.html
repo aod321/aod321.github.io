@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="YinZi‘Blog">
 <meta property="og:description" content="利用Docker VNC在无图形服务器上跑图形桌面现在很多服务器都是不提供用户图形界面的，但是科研人员有时候需要在服务器上运行图形界面，比如使用图形化的Matlab 处理数据等。虽然这时候可以选择安装一个 gnome 或者 xfce4 等桌面环境，但是通常服务器上是有很多用户的，这样会可能会占用一定的资源或者把环境搞乱掉，影响其他用户使用。 比较好的方案是起一个带 VNC 的 Docker 容器，">
 <meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2021-08-10T15:19:39.053Z">
+<meta property="og:updated_time" content="2021-08-11T02:27:24.671Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="利用Docker VNC在无图形服务器上跑图形桌面">
 <meta name="twitter:description" content="利用Docker VNC在无图形服务器上跑图形桌面现在很多服务器都是不提供用户图形界面的，但是科研人员有时候需要在服务器上运行图形界面，比如使用图形化的Matlab 处理数据等。虽然这时候可以选择安装一个 gnome 或者 xfce4 等桌面环境，但是通常服务器上是有很多用户的，这样会可能会占用一定的资源或者把环境搞乱掉，影响其他用户使用。 比较好的方案是起一个带 VNC 的 Docker 容器，">
@@ -197,7 +197,7 @@ var _hmt = _hmt || [];
 <li><p>访问桌面后，在VNC 连上的桌面上打开一个终端，然后在该终端中输入如下命令</p>
 </li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 将APT源换成清华镜像源</span></span><br><span class="line">sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list</span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装打开图形的必要依赖：JRE</span></span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install default-jre</span><br><span class="line"><span class="meta">#</span><span class="bash"> 执行 matlab</span></span><br><span class="line">/matlab/R2021a/bin/matlab</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 将APT源换成清华镜像源</span></span><br><span class="line">sudo sed -i 's/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list</span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装打开图形的必要依赖：JRE</span></span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install default-jre</span><br><span class="line"><span class="meta">#</span><span class="bash"> 执行 matlab</span></span><br><span class="line">/matlab/R2021a/bin/matlab</span><br></pre></td></tr></table></figure>
 
       
 
@@ -481,11 +481,15 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Server</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">IPV6</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Server</a>
+                <a href="javascript:void(0)" class="js-tag color3">AI</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -497,15 +501,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">AI</a>
+                <a href="javascript:void(0)" class="js-tag color4">ConfusingMind</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">Others</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ConfusingMind</a>
               </li>
             
             <div class="clearfix"></div>
