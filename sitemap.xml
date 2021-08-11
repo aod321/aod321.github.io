@@ -2,13 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.yinzi.me/post/nogui_linux_docker_vnc_matlab/</loc>
-    
-    <lastmod>2021-08-11T02:27:24.671Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.yinzi.me/post/may-the-fragrant-paddy%E2%80%93be-with-you/</loc>
     
     <lastmod>2021-05-22T11:56:43.157Z</lastmod>
@@ -107,13 +100,6 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/post/record_of_my_migration/</loc>
-    
-    <lastmod>2021-03-03T07:03:52.237Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.yinzi.me/post/7447-hackintosh/</loc>
     
     <lastmod>2021-03-03T07:03:52.237Z</lastmod>
@@ -121,7 +107,7 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/post/electric/</loc>
+    <loc>http://blog.yinzi.me/post/record_of_my_migration/</loc>
     
     <lastmod>2021-03-03T07:03:52.237Z</lastmod>
     
@@ -129,6 +115,13 @@
   
   <url>
     <loc>http://blog.yinzi.me/post/acrobat-updater-remove/</loc>
+    
+    <lastmod>2021-03-03T07:03:52.237Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.yinzi.me/post/electric/</loc>
     
     <lastmod>2021-03-03T07:03:52.237Z</lastmod>
     
