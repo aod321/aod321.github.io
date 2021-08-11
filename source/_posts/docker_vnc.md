@@ -27,7 +27,7 @@ docker run -d -v /share/matlab:/matlab -p 15901:5901 accetto/ubuntu-vnc-xfce-chr
 
 ```shell
 # 将APT源换成清华镜像源
-sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+sudo sed -i 's/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list
 # 安装打开图形的必要依赖：JRE
 sudo apt update
 sudo apt install default-jre
