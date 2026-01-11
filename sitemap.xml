@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.yinzi.me/post/no-autumn-in-beijing/</loc>
+    <loc>http://blog.yinzi.me/post/Cogito%20ergo%20what/</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/post/Cogito%20ergo%20what/</loc>
+    <loc>http://blog.yinzi.me/post/no-autumn-in-beijing/</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -29,25 +29,7 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/post/totally-gibberish/</loc>
-    
-    <lastmod>2026-01-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.yinzi.me/post/may-the-fragrant-paddy%E2%80%93be-with-you/</loc>
-    
-    <lastmod>2026-01-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.yinzi.me/post/too-lazy-to-write-a-title/</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -65,25 +47,25 @@
   </url>
   
   <url>
+    <loc>http://blog.yinzi.me/post/too-lazy-to-write-a-title/</loc>
+    
+    <lastmod>2026-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.yinzi.me/post/totally-gibberish/</loc>
+    
+    <lastmod>2026-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.yinzi.me/post/funwithIPV6/</loc>
-    
-    <lastmod>2026-01-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.yinzi.me/post/knowaboutipv6/</loc>
-    
-    <lastmod>2026-01-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.yinzi.me/post/learn-einsum-and-einops/</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -110,7 +92,25 @@
   </url>
   
   <url>
+    <loc>http://blog.yinzi.me/post/learn-einsum-and-einops/</loc>
+    
+    <lastmod>2026-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.yinzi.me/post/rpi3-install_lcddivers/</loc>
+    
+    <lastmod>2026-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.yinzi.me/post/knowaboutipv6/</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -155,6 +155,15 @@
   </url>
   
   <url>
+    <loc>http://blog.yinzi.me/post/electric/</loc>
+    
+    <lastmod>2026-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.yinzi.me/post/basicipv6/</loc>
     
     <lastmod>2026-01-11</lastmod>
@@ -173,7 +182,7 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/post/electric/</loc>
+    <loc>http://blog.yinzi.me/post/centos-installssr/</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -192,15 +201,6 @@
   
   <url>
     <loc>http://blog.yinzi.me/post/7447-hackintosh/</loc>
-    
-    <lastmod>2026-01-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.yinzi.me/post/centos-installssr/</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -232,20 +232,6 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/tags/IPV6/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.yinzi.me/tags/Adobe/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.yinzi.me/tags/%E7%94%B5%E5%AD%90/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -253,7 +239,7 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/tags/AI/</loc>
+    <loc>http://blog.yinzi.me/tags/IPV6/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -274,14 +260,21 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/tags/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%85%A5%E9%97%A8/</loc>
+    <loc>http://blog.yinzi.me/tags/AI/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/tags/Others/</loc>
+    <loc>http://blog.yinzi.me/tags/Adobe/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.yinzi.me/tags/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -294,14 +287,14 @@
     <priority>0.2</priority>
   </url>
   
-
-  
   <url>
-    <loc>http://blog.yinzi.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
+    <loc>http://blog.yinzi.me/tags/Others/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
+  
+
   
   <url>
     <loc>http://blog.yinzi.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3%E6%8A%80%E6%9C%AF/</loc>
@@ -311,14 +304,7 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/categories/IPV6/</loc>
-    <lastmod>2026-01-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.yinzi.me/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/</loc>
+    <loc>http://blog.yinzi.me/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -332,7 +318,7 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/categories/AI/</loc>
+    <loc>http://blog.yinzi.me/categories/IPV6/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -347,6 +333,20 @@
   
   <url>
     <loc>http://blog.yinzi.me/categories/%E8%84%91%E5%AD%90%E4%B8%8D%E5%A5%BD%E5%8F%B2/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.yinzi.me/categories/AI/</loc>
+    <lastmod>2026-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.yinzi.me/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2026-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
