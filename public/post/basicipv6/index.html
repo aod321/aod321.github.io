@@ -9,13 +9,12 @@
   <title>V6初识 | YinZi‘Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="内容介绍利用IPV6最直接的方式便是访问支持IPV6的站点，而不同高校获取IPV6地址方式不一样，很多都是上层交换机直接分配双栈的，所以只要简单配置获取一下V6公网地址就可以享受到相应的免流服务，有的学校则需要通过PPP验证来获取IPV6地址。 本章将演示如何在本地电脑上利用IPV6服务，首先讲演示如何通过PPP验证获取IPV6地址（其他高校需要具体问题具体分析，仅供参考），接着在获取到可用的IP">
-<meta name="keywords" content="IPV6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="V6初识">
 <meta property="og:url" content="http://blog.yinzi.me/post/basicipv6/index.html">
 <meta property="og:site_name" content="YinZi‘Blog">
 <meta property="og:description" content="内容介绍利用IPV6最直接的方式便是访问支持IPV6的站点，而不同高校获取IPV6地址方式不一样，很多都是上层交换机直接分配双栈的，所以只要简单配置获取一下V6公网地址就可以享受到相应的免流服务，有的学校则需要通过PPP验证来获取IPV6地址。 本章将演示如何在本地电脑上利用IPV6服务，首先讲演示如何通过PPP验证获取IPV6地址（其他高校需要具体问题具体分析，仅供参考），接着在获取到可用的IP">
-<meta property="og:locale" content="zh-cn">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/1-1.png">
 <meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/1-2.png">
 <meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/1.png">
@@ -24,10 +23,11 @@
 <meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/4.png">
 <meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/5.png">
 <meta property="og:image" content="http://blog.yinzi.me/post/basicipv6/6.png">
-<meta property="og:updated_time" content="2021-03-03T07:03:52.238Z">
+<meta property="article:published_time" content="2018-01-31T11:00:32.000Z">
+<meta property="article:modified_time" content="2026-01-11T14:08:13.965Z">
+<meta property="article:author" content="YinZi">
+<meta property="article:tag" content="IPV6">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="V6初识">
-<meta name="twitter:description" content="内容介绍利用IPV6最直接的方式便是访问支持IPV6的站点，而不同高校获取IPV6地址方式不一样，很多都是上层交换机直接分配双栈的，所以只要简单配置获取一下V6公网地址就可以享受到相应的免流服务，有的学校则需要通过PPP验证来获取IPV6地址。 本章将演示如何在本地电脑上利用IPV6服务，首先讲演示如何通过PPP验证获取IPV6地址（其他高校需要具体问题具体分析，仅供参考），接着在获取到可用的IP">
 <meta name="twitter:image" content="http://blog.yinzi.me/post/basicipv6/1-1.png">
   
     <link rel="alternative" href="/atom.xml" title="YinZi‘Blog" type="application/atom+xml">
@@ -56,7 +56,7 @@ var _hmt = _hmt || [];
 </script>
 
 
-</head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -66,11 +66,11 @@ var _hmt = _hmt || [];
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="null" class="profilepic">
+		<a href="" class="profilepic">
 			<img src="/assets/img/favicon.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="null">YinZi</a></h1>
+		  <h1 class="header-author"><a href=""></a></h1>
 		</hgroup>
 		
 
@@ -130,7 +130,7 @@ var _hmt = _hmt || [];
 				<img src="/assets/img/favicon.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">YinZi</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
 			
@@ -196,17 +196,20 @@ var _hmt = _hmt || [];
 <p>本章将演示如何在本地电脑上利用IPV6服务，首先讲演示如何通过PPP验证获取IPV6地址（其他高校需要具体问题具体分析，仅供参考），接着在获取到可用的IPV6公网地址以后对纯IPV6访问方式作简单的介绍与演示。</p>
 <h2 id="主要要求"><a href="#主要要求" class="headerlink" title="主要要求"></a>主要要求</h2><blockquote>
 <ul>
-<li>装有Win7/Win8/Win10 系统的电脑一台</li>
+<li>装有Win7&#x2F;Win8&#x2F;Win10 系统的电脑一台</li>
 <li>网线</li>
 <li>对IPV6的基本应用有初步的了解。</li>
 </ul>
 </blockquote>
-<a id="more"></a>
+<span id="more"></span>
+
 <h2 id="视频演示"><a href="#视频演示" class="headerlink" title="视频演示"></a>视频演示</h2><p>本章视频演示</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P9CM4CA9kJg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
-<h2 id="以下是图文教程"><a href="#以下是图文教程" class="headerlink" title="#以下是图文教程"></a>#以下是图文教程</h2><h2 id="通过PPPOE方式获取IPV6地址"><a href="#通过PPPOE方式获取IPV6地址" class="headerlink" title="通过PPPOE方式获取IPV6地址"></a>通过PPPOE方式获取IPV6地址</h2><p>步骤(请使用WIN7及以上版本系统)</p>
+<p>#以下是图文教程</p>
+<hr>
+<h2 id="通过PPPOE方式获取IPV6地址"><a href="#通过PPPOE方式获取IPV6地址" class="headerlink" title="通过PPPOE方式获取IPV6地址"></a>通过PPPOE方式获取IPV6地址</h2><p>步骤(请使用WIN7及以上版本系统)</p>
 <p>1.由于本校IPV6在宿舍是通过电信的通道走的，</p>
 <p>所以请<em>先用网线连接电信的网口</em>(每个人桌子上面或者下面应该都有)</p>
 <p>2.新建拨号</p>
@@ -238,7 +241,7 @@ var _hmt = _hmt || [];
 <p>2001:778::37 </p>
 </blockquote>
 <p>就可以访问像QQ邮箱之类的V4地址网站。<br>这个DNS是个DNS64的通道，博主以前也用过，<em>目前测试这个通道已经失效了。</em></p>
-<h2 id="访问纯IPV6资源"><a href="#访问纯IPV6资源" class="headerlink" title="访问纯IPV6资源"></a>访问纯IPV6资源</h2><p>纯IPV6可以直接访问站点不多，目前可以访问哪些资源请参考上一章<br><a href="https://aod321.github.io/post/v6resource/" target="_blank" rel="noopener">V6资源介绍</a></p>
+<h2 id="访问纯IPV6资源"><a href="#访问纯IPV6资源" class="headerlink" title="访问纯IPV6资源"></a>访问纯IPV6资源</h2><p>纯IPV6可以直接访问站点不多，目前可以访问哪些资源请参考上一章<br><a href="https://aod321.github.io/post/v6resource/">V6资源介绍</a></p>
 
       
 
@@ -343,8 +346,8 @@ var _hmt = _hmt || [];
     </a>
   
   
-    <a href="/post/nogui_linux_docker_vnc_matlab/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">利用Docker VNC在无图形服务器上跑图形桌面</div>
+    <a href="/post/v6resource/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">V6资源介绍</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -403,7 +406,7 @@ gitment.render('gitment-ctn')
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 YinZi
+    		&copy; 2026 YinZi
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -523,11 +526,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">IPV6</a>
+                <a href="javascript:void(0)" class="js-tag color3">电子</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Adobe</a>
+                <a href="javascript:void(0)" class="js-tag color5">IPV6</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -535,11 +538,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">电子</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Others</a>
+                <a href="javascript:void(0)" class="js-tag color1">脑子不好史</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -547,7 +546,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">脑子不好史</a>
+                <a href="javascript:void(0)" class="js-tag color1">Adobe</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -556,6 +555,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ConfusingMind</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Others</a>
               </li>
             
             <div class="clearfix"></div>

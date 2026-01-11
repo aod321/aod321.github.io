@@ -1,0 +1,202 @@
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Writing database to /Users/yinzi/aod321.github.io/db.json","time":"2026-01-11T15:18:59.916Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Hexo version: 3.9.0","time":"2026-01-11T15:18:59.921Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Working directory: ~/aod321.github.io/","time":"2026-01-11T15:18:59.921Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Config loaded: ~/aod321.github.io/_config.yml","time":"2026-01-11T15:18:59.959Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-asset-image","time":"2026-01-11T15:18:59.992Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-deployer-git","time":"2026-01-11T15:19:00.028Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-deployer-openshift","time":"2026-01-11T15:19:00.030Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-deployer-heroku","time":"2026-01-11T15:19:00.031Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-deployer-rsync","time":"2026-01-11T15:19:00.032Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-generator-archive","time":"2026-01-11T15:19:00.033Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-generator-category","time":"2026-01-11T15:19:00.034Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-generator-feed","time":"2026-01-11T15:19:00.035Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-generator-index","time":"2026-01-11T15:19:00.035Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-generator-json-content","time":"2026-01-11T15:19:00.059Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-generator-tag","time":"2026-01-11T15:19:00.060Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-generator-sitemap","time":"2026-01-11T15:19:00.061Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-renderer-ejs","time":"2026-01-11T15:19:00.063Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-renderer-marked","time":"2026-01-11T15:19:00.065Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-renderer-stylus","time":"2026-01-11T15:19:00.089Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Plugin loaded: hexo-server","time":"2026-01-11T15:19:00.113Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Loading database.","time":"2026-01-11T15:19:00.114Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":30,"msg":"Start processing","time":"2026-01-11T15:19:00.137Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: CNAME","time":"2026-01-11T15:19:00.147Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: public","time":"2026-01-11T15:19:00.147Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/Centos7搭建shadowsocksR.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/Centos 7部署VMESS+TCP+TLS.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/Kdatacenter迁移记录.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/LT3757学习笔记.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/MacOS Acrobat Pro DC更新屏蔽.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/DELL inprison 7447 黑苹果折腾记录.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/V6初识.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/V6资源介绍-1.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/docker_vnc.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/了解ipv6.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/ipv6折腾集.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/学习Einsum和Einops.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/我非我.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/把AI装到狗身子上，那它叫AI狗还是狗AI.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/没什么积累和输入自然是写不出什么好东西.md","time":"2026-01-11T15:19:00.155Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/秋天好像来了.md","time":"2026-01-11T15:19:00.160Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/淘宝买的mini IPC摄像头分析.md","time":"2026-01-11T15:19:00.160Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/树莓派的系统安装与使用.md","time":"2026-01-11T15:19:00.160Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/缅怀袁隆平院士.md","time":"2026-01-11T15:19:00.160Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/群体学习.md","time":"2026-01-11T15:19:00.160Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/随笔2-191025.md","time":"2026-01-11T15:19:00.160Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/随笔4-191027.md","time":"2026-01-11T15:19:00.160Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: others/DELL inprison 7447 黑苹果折腾记录.md","time":"2026-01-11T15:19:00.160Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/V6初识/1-1.png","time":"2026-01-11T15:19:00.174Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/main.0cf68a.css","time":"2026-01-11T15:19:00.174Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/V6初识/1-2.png","time":"2026-01-11T15:19:00.174Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/slider.e37972.js","time":"2026-01-11T15:19:00.174Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/V6初识/1.png","time":"2026-01-11T15:19:00.174Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/V6初识/3.png","time":"2026-01-11T15:19:00.175Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/V6初识/2.png","time":"2026-01-11T15:19:00.175Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/V6初识/5.png","time":"2026-01-11T15:19:00.175Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/V6初识/4.png","time":"2026-01-11T15:19:00.175Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/V6初识/6.png","time":"2026-01-11T15:19:00.175Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: assets/img/alipay.jpeg","time":"2026-01-11T15:19:00.177Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: assets/img/favicon.png","time":"2026-01-11T15:19:00.177Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/mobile.992cbe.js","time":"2026-01-11T15:19:00.177Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/main.0cf68a.js","time":"2026-01-11T15:19:00.177Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Theme config loaded.","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _config.yml","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: assets/img/Disk.png","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: assets/img/wechat.jpeg","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/img/preloader.gif","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/img/default-skin.png","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/img/scrollbar_arrow.png","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/fonts/iconfont.16acc2.ttf","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/fonts/default-skin.b257fa.svg","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/fonts/iconfont.45d7ee.svg","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/fonts/tooltip.4004ff.svg","time":"2026-01-11T15:19:00.181Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/fonts/iconfont.8c627f.woff","time":"2026-01-11T15:19:00.182Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: source/fonts/iconfont.b322fa.eot","time":"2026-01-11T15:19:00.182Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/page.ejs","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/layout.ejs","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/archive.ejs","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/post.ejs","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/category.ejs","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/tag.ejs","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/index.ejs","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: languages/default.yml","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: languages/ru.yml","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: languages/fr.yml","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: languages/zh-CN.yml","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: languages/nl.yml","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: languages/no.yml","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: languages/zh-tw.yml","time":"2026-01-11T15:19:00.186Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/toc.ejs","time":"2026-01-11T15:19:00.187Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/archive-post.ejs","time":"2026-01-11T15:19:00.187Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/after-footer.ejs","time":"2026-01-11T15:19:00.187Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/archive.ejs","time":"2026-01-11T15:19:00.187Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/article.ejs","time":"2026-01-11T15:19:00.187Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/aside.ejs","time":"2026-01-11T15:19:00.187Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/baidu-analytics.ejs","time":"2026-01-11T15:19:00.187Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/footer.ejs","time":"2026-01-11T15:19:00.187Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/css.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/header.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/google-analytics.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/head.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/left-col.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/mathjax.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/mobile-nav.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/viewer.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/tools.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/script.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/post/category.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/post/changyan.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/post/duoshuo.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/post/tag.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/post/gitment.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/post/nav.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/post/date.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/post/wangyiyun.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/post/title.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: layout/_partial/post/share.ejs","time":"2026-01-11T15:19:00.188Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Processed: _posts/image/我非我copy/1768141493139.png","time":"2026-01-11T15:19:00.190Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Generator: page","time":"2026-01-11T15:19:00.218Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Generator: post","time":"2026-01-11T15:19:00.218Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Generator: archive","time":"2026-01-11T15:19:00.218Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Generator: category","time":"2026-01-11T15:19:00.218Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Generator: feed","time":"2026-01-11T15:19:00.218Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Generator: index","time":"2026-01-11T15:19:00.218Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Generator: json-content","time":"2026-01-11T15:19:00.218Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Generator: tag","time":"2026-01-11T15:19:00.218Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Generator: sitemap","time":"2026-01-11T15:19:00.218Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Generator: asset","time":"2026-01-11T15:19:00.219Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":30,"msg":"Files loaded in 108 ms","time":"2026-01-11T15:19:00.222Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML page: others/DELL inprison 7447 黑苹果折腾记录.html","time":"2026-01-11T15:19:00.225Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/Cogito ergo what/index.html","time":"2026-01-11T15:19:00.225Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/nogui_linux_docker_vnc_matlab/index.html","time":"2026-01-11T15:19:00.225Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/learn-einsum-and-einops/index.html","time":"2026-01-11T15:19:00.225Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/may-the-fragrant-paddy–be-with-you/index.html","time":"2026-01-11T15:19:00.226Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/acrobat-updater-remove/index.html","time":"2026-01-11T15:19:00.226Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/depoly_vmess_tcp_tls_on_centos7/index.html","time":"2026-01-11T15:19:00.226Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/record_of_my_migration/index.html","time":"2026-01-11T15:19:00.226Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/nothing-but-a-draft/index.html","time":"2026-01-11T15:19:00.226Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/I-am-not-me/index.html","time":"2026-01-11T15:19:00.226Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/analysis-of-a-mini-camera/index.html","time":"2026-01-11T15:19:00.226Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/totally-gibberish/index.html","time":"2026-01-11T15:19:00.226Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/no-autumn-in-beijing/index.html","time":"2026-01-11T15:19:00.226Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/too-lazy-to-write-a-title/index.html","time":"2026-01-11T15:19:00.226Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/why-people-hate-change/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/electric/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/funwithIPV6/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/basicipv6/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/knowaboutipv6/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/v6resource/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/rpi3-install_lcddivers/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/centos-installssr/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML post: post/7447-hackintosh/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/page/2/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/page/3/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2016/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2016/12/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2017/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2016/04/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2017/01/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2018/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2018/01/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2018/02/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2018/07/index.html","time":"2026-01-11T15:19:00.227Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2019/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2019/10/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2019/12/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2020/05/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2020/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2020/06/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2020/07/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2021/03/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2021/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2021/05/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2021/08/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2026/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML archive: archives/2026/01/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML category: categories/计算机相关技术/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML category: categories/电子/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML category: categories/计算机网络/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML category: categories/IPV6/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML category: categories/实用技巧/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML category: categories/Server/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML category: categories/AI/index.html","time":"2026-01-11T15:19:00.228Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML category: categories/Diy/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML category: categories/脑子不好史/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML category: categories/君子以自强不息/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML index: index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML index: page/2/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML index: page/3/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/Network/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/Mac-OS/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/电子/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/IPV6/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/Adobe/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/Server/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/AI/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/树莓派入门/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/脑子不好史/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/Others/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Rendering HTML tag: tags/ConfusingMind/index.html","time":"2026-01-11T15:19:00.229Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":30,"msg":"0 files generated in 479 ms","time":"2026-01-11T15:19:00.701Z","v":0}
+{"name":"hexo","hostname":"inzM1Max-2.local","pid":66439,"level":20,"msg":"Database saved","time":"2026-01-11T15:19:00.705Z","v":0}

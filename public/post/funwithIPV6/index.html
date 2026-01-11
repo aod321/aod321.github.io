@@ -9,17 +9,17 @@
   <title>IPV6折腾集 | YinZi‘Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="前言背景本文仅仅为探索过程的一个整理，针对：  通过pppoe 用户名后面加@ipv6等后缀拨号获得单栈道IPV6地址的环境 不对IPV6地址进行计费和流量与访问限制的高校  说明 本文相当于是博文集的序言和目录，相关内容正在持续更新中。- 由于我技术水平不高，所以文中的很多言论都只是我个人根据网上资料的理解，很多方法和技术也都是来自其他众多大牛们，我只是为了记录和整理折腾了一下方便我矿的童鞋们，">
-<meta name="keywords" content="IPV6">
 <meta property="og:type" content="article">
 <meta property="og:title" content="IPV6折腾集">
 <meta property="og:url" content="http://blog.yinzi.me/post/funwithIPV6/index.html">
 <meta property="og:site_name" content="YinZi‘Blog">
 <meta property="og:description" content="前言背景本文仅仅为探索过程的一个整理，针对：  通过pppoe 用户名后面加@ipv6等后缀拨号获得单栈道IPV6地址的环境 不对IPV6地址进行计费和流量与访问限制的高校  说明 本文相当于是博文集的序言和目录，相关内容正在持续更新中。- 由于我技术水平不高，所以文中的很多言论都只是我个人根据网上资料的理解，很多方法和技术也都是来自其他众多大牛们，我只是为了记录和整理折腾了一下方便我矿的童鞋们，">
-<meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2021-03-03T07:03:52.242Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-01-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-01-11T14:08:13.967Z">
+<meta property="article:author" content="YinZi">
+<meta property="article:tag" content="IPV6">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="IPV6折腾集">
-<meta name="twitter:description" content="前言背景本文仅仅为探索过程的一个整理，针对：  通过pppoe 用户名后面加@ipv6等后缀拨号获得单栈道IPV6地址的环境 不对IPV6地址进行计费和流量与访问限制的高校  说明 本文相当于是博文集的序言和目录，相关内容正在持续更新中。- 由于我技术水平不高，所以文中的很多言论都只是我个人根据网上资料的理解，很多方法和技术也都是来自其他众多大牛们，我只是为了记录和整理折腾了一下方便我矿的童鞋们，">
   
     <link rel="alternative" href="/atom.xml" title="YinZi‘Blog" type="application/atom+xml">
   
@@ -47,7 +47,7 @@ var _hmt = _hmt || [];
 </script>
 
 
-</head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -57,11 +57,11 @@ var _hmt = _hmt || [];
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="null" class="profilepic">
+		<a href="" class="profilepic">
 			<img src="/assets/img/favicon.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="null">YinZi</a></h1>
+		  <h1 class="header-author"><a href=""></a></h1>
 		</hgroup>
 		
 
@@ -121,7 +121,7 @@ var _hmt = _hmt || [];
 				<img src="/assets/img/favicon.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">YinZi</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
 			
@@ -192,25 +192,27 @@ var _hmt = _hmt || [];
 <li>本文相当于是博文集的序言和目录，相关内容正在持续更新中。- 由于我技术水平不高，所以文中的很多言论都只是我个人根据网上资料的理解，很多方法和技术也都是来自其他众多大牛们，我只是为了记录和整理折腾了一下方便我矿的童鞋们，顺便也能听取大家的建议和指教，更深入地了解相关的专业知识。不妥之处，还请各位包涵指点。</li>
 <li>博主本人的水平有限，对于未解决的问题，希望能和大家一起讨论交流</li>
 </ul>
-<a id="more"></a>
+<span id="more"></span>
 <h3 id="声明"><a href="#声明" class="headerlink" title="声明"></a>声明</h3><ul>
-<li>虽然我的初衷确实是为了免费上网，但IPV6本身并不是用来免费上网的。希望感兴趣同学能深入了解和研究IPV6相关内容。</li>
-<li>转载请征询本人意见。</li>
-<li>涉嫌侵权知会本人删除。</li>
-</ul>
-<ul>
-<li><strong>本集仅供技术交流，不得利用本文提及的相关技术进行任何不法行为、发表任何不正当言论以及谋取任何形式的商业利益!</strong></li>
+<li><p>虽然我的初衷确实是为了免费上网，但IPV6本身并不是用来免费上网的。希望感兴趣同学能深入了解和研究IPV6相关内容。</p>
+</li>
+<li><p>转载请征询本人意见。</p>
+</li>
+<li><p>涉嫌侵权知会本人删除。</p>
+</li>
+<li><p><strong>本集仅供技术交流，不得利用本文提及的相关技术进行任何不法行为、发表任何不正当言论以及谋取任何形式的商业利益!</strong></p>
+</li>
 </ul>
 <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><h3 id="理论篇"><a href="#理论篇" class="headerlink" title="理论篇"></a>理论篇</h3><blockquote>
 <ul>
-<li><a href="https://aod321.github.io/post/knowaboutipv6/" target="_blank" rel="noopener">了解IPV6</a></li>
+<li><a href="https://aod321.github.io/post/knowaboutipv6/">了解IPV6</a></li>
 <li><del>博主学校的IPV6网络结构浅析</del></li>
 </ul>
 </blockquote>
 <h3 id="实践篇"><a href="#实践篇" class="headerlink" title="实践篇"></a>实践篇</h3><blockquote>
 <ul>
-<li>十年窗下无人问，<a href="https://aod321.github.io/post/v6resource/" target="_blank" rel="noopener">V6资源介绍</a></li>
-<li>一朝成名天下知，<a href="https://aod321.github.io/post/basicipv6/" target="_blank" rel="noopener">IPV6初识</a></li>
+<li>十年窗下无人问，<a href="https://aod321.github.io/post/v6resource/">V6资源介绍</a></li>
+<li>一朝成名天下知，<a href="https://aod321.github.io/post/basicipv6/">IPV6初识</a></li>
 <li>路漫漫其修远兮，IPV6常规化探索（转V4）</li>
 <li>吾将上下而求索，充分利用IPV6带宽</li>
 <li>雄关漫道真如铁，基于Openwrt的IPV6无线转发</li>
@@ -223,7 +225,7 @@ var _hmt = _hmt || [];
 <li>游戏低延时</li>
 </ul>
 </blockquote>
-<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p><a href="http://lixingcong.github.io" target="_blank" rel="noopener">黎醒聪的博客</a><br><a href="http://ygcaicn.github.io" target="_blank" rel="noopener">蔡亚刚的博客</a></p>
+<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2><p><a href="http://lixingcong.github.io/">黎醒聪的博客</a><br><a href="http://ygcaicn.github.io/">蔡亚刚的博客</a></p>
 
       
 
@@ -387,7 +389,7 @@ var _hmt = _hmt || [];
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#背景"><span class="toc-number">1.1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#说明"><span class="toc-number">1.2.</span> <span class="toc-text">说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#声明"><span class="toc-number">1.3.</span> <span class="toc-text">声明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#目录"><span class="toc-number">2.</span> <span class="toc-text">目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#理论篇"><span class="toc-number">2.1.</span> <span class="toc-text">理论篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实践篇"><span class="toc-number">2.2.</span> <span class="toc-text">实践篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#探讨篇"><span class="toc-number">2.3.</span> <span class="toc-text">探讨篇</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#友情链接"><span class="toc-number">3.</span> <span class="toc-text">友情链接</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-number">1.1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%B4%E6%98%8E"><span class="toc-number">1.2.</span> <span class="toc-text">说明</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A3%B0%E6%98%8E"><span class="toc-number">1.3.</span> <span class="toc-text">声明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%AE%E5%BD%95"><span class="toc-number">2.</span> <span class="toc-text">目录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%90%86%E8%AE%BA%E7%AF%87"><span class="toc-number">2.1.</span> <span class="toc-text">理论篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E8%B7%B5%E7%AF%87"><span class="toc-number">2.2.</span> <span class="toc-text">实践篇</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A2%E8%AE%A8%E7%AF%87"><span class="toc-number">2.3.</span> <span class="toc-text">探讨篇</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5"><span class="toc-number">3.</span> <span class="toc-text">友情链接</span></a></li></ol>
                     </div>
                 </span>
             </div>
@@ -406,7 +408,7 @@ var _hmt = _hmt || [];
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 YinZi
+    		&copy; 2026 YinZi
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -526,11 +528,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">IPV6</a>
+                <a href="javascript:void(0)" class="js-tag color3">电子</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Adobe</a>
+                <a href="javascript:void(0)" class="js-tag color5">IPV6</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -538,11 +540,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">电子</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Others</a>
+                <a href="javascript:void(0)" class="js-tag color1">脑子不好史</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -550,7 +548,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">脑子不好史</a>
+                <a href="javascript:void(0)" class="js-tag color1">Adobe</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -559,6 +557,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ConfusingMind</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Others</a>
               </li>
             
             <div class="clearfix"></div>

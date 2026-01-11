@@ -9,17 +9,17 @@
   <title>利用Docker VNC在无图形服务器上跑图形桌面 | YinZi‘Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="利用Docker VNC在无图形服务器上跑图形桌面现在很多服务器都是不提供用户图形界面的，但是科研人员有时候需要在服务器上运行图形界面，比如使用图形化的Matlab 处理数据等。虽然这时候可以选择安装一个 gnome 或者 xfce4 等桌面环境，但是通常服务器上是有很多用户的，这样会可能会占用一定的资源或者把环境搞乱掉，影响其他用户使用。 比较好的方案是起一个带 VNC 的 Docker 容器，">
-<meta name="keywords" content="Server">
 <meta property="og:type" content="article">
 <meta property="og:title" content="利用Docker VNC在无图形服务器上跑图形桌面">
 <meta property="og:url" content="http://blog.yinzi.me/post/nogui_linux_docker_vnc_matlab/index.html">
 <meta property="og:site_name" content="YinZi‘Blog">
 <meta property="og:description" content="利用Docker VNC在无图形服务器上跑图形桌面现在很多服务器都是不提供用户图形界面的，但是科研人员有时候需要在服务器上运行图形界面，比如使用图形化的Matlab 处理数据等。虽然这时候可以选择安装一个 gnome 或者 xfce4 等桌面环境，但是通常服务器上是有很多用户的，这样会可能会占用一定的资源或者把环境搞乱掉，影响其他用户使用。 比较好的方案是起一个带 VNC 的 Docker 容器，">
-<meta property="og:locale" content="zh-cn">
-<meta property="og:updated_time" content="2021-08-10T15:14:18.712Z">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-08-10T15:14:32.000Z">
+<meta property="article:modified_time" content="2026-01-11T14:08:13.967Z">
+<meta property="article:author" content="YinZi">
+<meta property="article:tag" content="Server">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="利用Docker VNC在无图形服务器上跑图形桌面">
-<meta name="twitter:description" content="利用Docker VNC在无图形服务器上跑图形桌面现在很多服务器都是不提供用户图形界面的，但是科研人员有时候需要在服务器上运行图形界面，比如使用图形化的Matlab 处理数据等。虽然这时候可以选择安装一个 gnome 或者 xfce4 等桌面环境，但是通常服务器上是有很多用户的，这样会可能会占用一定的资源或者把环境搞乱掉，影响其他用户使用。 比较好的方案是起一个带 VNC 的 Docker 容器，">
   
     <link rel="alternative" href="/atom.xml" title="YinZi‘Blog" type="application/atom+xml">
   
@@ -47,7 +47,7 @@ var _hmt = _hmt || [];
 </script>
 
 
-</head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -57,11 +57,11 @@ var _hmt = _hmt || [];
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="null" class="profilepic">
+		<a href="" class="profilepic">
 			<img src="/assets/img/favicon.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="null">YinZi</a></h1>
+		  <h1 class="header-author"><a href=""></a></h1>
 		</hgroup>
 		
 
@@ -121,7 +121,7 @@ var _hmt = _hmt || [];
 				<img src="/assets/img/favicon.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">YinZi</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
 			
@@ -176,7 +176,7 @@ var _hmt = _hmt || [];
 
         
         <a href="/post/nogui_linux_docker_vnc_matlab/" class="archive-article-date">
-  	<time datetime="2018-01-31T11:00:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-31</time>
+  	<time datetime="2021-08-10T15:14:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-10</time>
 </a>
         
       </header>
@@ -188,16 +188,18 @@ var _hmt = _hmt || [];
 <p>以下以在一个装有 Docker 的无图形界面服务器上安装运行 Matlab 为例，为大家讲解具体的操作。</p>
 <p>假设服务器 IP 是 192.168.101.32</p>
 <ol>
-<li>开启 带 VNC 环境的docker容器，将 matlab 所在路径(假设安装到了本机的/share/matlab)映射到容器内的某个路径，把 5901 端口映射到本地服务器的 15901(也可以写成别的)。</li>
+<li>开启 带 VNC 环境的docker容器，将 matlab 所在路径(假设安装到了本机的&#x2F;share&#x2F;matlab)映射到容器内的某个路径，把 5901 端口映射到本地服务器的 15901(也可以写成别的)。</li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d -v /share/matlab:/matlab -p 15901:5901 accetto/ubuntu-vnc-xfce-chromium-g3</span><br></pre></td></tr></table></figure>
-<ol>
+
+<ol start="2">
 <li><p>VNC 客户端访问192.168.101.32:15901即可访问桌面</p>
 </li>
 <li><p>访问桌面后，在VNC 连上的桌面上打开一个终端，然后在该终端中输入如下命令</p>
 </li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 将APT源换成清华镜像源</span></span><br><span class="line">sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list</span><br><span class="line"><span class="meta">#</span><span class="bash"> 安装打开图形的必要依赖：JRE</span></span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install default-jre</span><br><span class="line"><span class="meta">#</span><span class="bash"> 执行 matlab</span></span><br><span class="line">/matlab/R2021a/bin/matlab</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">将APT源换成清华镜像源</span></span><br><span class="line">sudo sed -i &#x27;s/archive.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g&#x27; /etc/apt/sources.list</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装打开图形的必要依赖：JRE</span></span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install default-jre</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">执行 matlab</span></span><br><span class="line">/matlab/R2021a/bin/matlab</span><br></pre></td></tr></table></figure>
+
 
       
 
@@ -292,18 +294,18 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/post/basicipv6/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/post/Cogito-ergo-what/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          V6初识
+          把AI装到狗身子上，那它叫AI狗还是狗AI？
         
       </div>
     </a>
   
   
-    <a href="/post/v6resource/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">V6资源介绍</div>
+    <a href="/post/may-the-fragrant-paddy%E2%80%93be-with-you/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">缅怀袁隆平院士</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -362,7 +364,7 @@ gitment.render('gitment-ctn')
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 YinZi
+    		&copy; 2026 YinZi
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -482,11 +484,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">IPV6</a>
+                <a href="javascript:void(0)" class="js-tag color3">电子</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Adobe</a>
+                <a href="javascript:void(0)" class="js-tag color5">IPV6</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -494,11 +496,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">电子</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Others</a>
+                <a href="javascript:void(0)" class="js-tag color1">脑子不好史</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -506,7 +504,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">脑子不好史</a>
+                <a href="javascript:void(0)" class="js-tag color1">Adobe</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -515,6 +513,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ConfusingMind</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Others</a>
               </li>
             
             <div class="clearfix"></div>

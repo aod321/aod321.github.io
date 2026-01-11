@@ -9,20 +9,20 @@
   <title>CentOS7 部署VMESS+TCP+TLS | YinZi‘Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="起因由于忍不住剁手新入一台韩国Kdatacenter的VPS，从南京联通出去的链路还是不错的，如图所示。 于是乎，需要给它重新配置一些东西。默认给的操作系统是CentOS6，我发工单改成了CentOS7。它家工单系统蛮有意思的，我半夜三点钟发居然十分钟后就回复了，看来是有其他时区的客服。 最近发现官方社区出了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP">
-<meta name="keywords" content="Network">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS7 部署VMESS+TCP+TLS">
 <meta property="og:url" content="http://blog.yinzi.me/post/depoly_vmess_tcp_tls_on_centos7/index.html">
 <meta property="og:site_name" content="YinZi‘Blog">
 <meta property="og:description" content="起因由于忍不住剁手新入一台韩国Kdatacenter的VPS，从南京联通出去的链路还是不错的，如图所示。 于是乎，需要给它重新配置一些东西。默认给的操作系统是CentOS6，我发工单改成了CentOS7。它家工单系统蛮有意思的，我半夜三点钟发居然十分钟后就回复了，看来是有其他时区的客服。 最近发现官方社区出了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP">
-<meta property="og:locale" content="zh-cn">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2020/06/17/tvlpqiFUckWEjsQ.png">
 <meta property="og:image" content="https://i.loli.net/2020/06/17/GHRKqbBelJAC34k.png">
 <meta property="og:image" content="https://i.loli.net/2020/06/17/IHzUFPDVqvuhTWQ.png">
-<meta property="og:updated_time" content="2021-03-03T07:03:52.236Z">
+<meta property="article:published_time" content="2020-06-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-01-11T14:08:13.964Z">
+<meta property="article:author" content="YinZi">
+<meta property="article:tag" content="Network">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CentOS7 部署VMESS+TCP+TLS">
-<meta name="twitter:description" content="起因由于忍不住剁手新入一台韩国Kdatacenter的VPS，从南京联通出去的链路还是不错的，如图所示。 于是乎，需要给它重新配置一些东西。默认给的操作系统是CentOS6，我发工单改成了CentOS7。它家工单系统蛮有意思的，我半夜三点钟发居然十分钟后就回复了，看来是有其他时区的客服。 最近发现官方社区出了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP">
 <meta name="twitter:image" content="https://i.loli.net/2020/06/17/tvlpqiFUckWEjsQ.png">
   
     <link rel="alternative" href="/atom.xml" title="YinZi‘Blog" type="application/atom+xml">
@@ -51,7 +51,7 @@ var _hmt = _hmt || [];
 </script>
 
 
-</head>
+<meta name="generator" content="Hexo 8.1.1"></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -61,11 +61,11 @@ var _hmt = _hmt || [];
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="null" class="profilepic">
+		<a href="" class="profilepic">
 			<img src="/assets/img/favicon.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="null">YinZi</a></h1>
+		  <h1 class="header-author"><a href=""></a></h1>
 		</hgroup>
 		
 
@@ -125,7 +125,7 @@ var _hmt = _hmt || [];
 				<img src="/assets/img/favicon.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">YinZi</h1>
+			  <h1 class="header-author js-header-author"></h1>
 			</hgroup>
 			
 			
@@ -190,83 +190,116 @@ var _hmt = _hmt || [];
         <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>由于忍不住剁手新入一台韩国Kdatacenter的VPS，从南京联通出去的链路还是不错的，如图所示。<br><img src="https://i.loli.net/2020/06/17/tvlpqiFUckWEjsQ.png" alt="image.png"></p>
 <p>于是乎，需要给它重新配置一些东西。默认给的操作系统是CentOS6，我发工单改成了CentOS7。它家工单系统蛮有意思的，我半夜三点钟发居然十分钟后就回复了，看来是有其他时区的客服。</p>
 <p>最近发现官方社区出了TCP+TLS的指南，不再是以前的Websocket+TLS，而是参照Trojan的TCP+TLS的思路，用Haproxy作为443前端根据流量特征进行中转，具体来说就是，如果接入流量真的是http流量的话，那么就送到nginx后端，如果是其他流量的话，那么就把它送到v2ray的VMESS端口里。以前的方式是固定web path里的统统用websocket反向代理到VMESS端口。现在这种TCP+TLS的方式根据测试延迟会比以前低一些。</p>
-<p>我个人第一想法是感觉额外添加一个Haproxy出来不够美观，<del>最近时间紧，我就不要去探索了，2333</del>~~   之前没看仔细，已经有人搭了只靠nginx转发的了。</p>
+<p>我个人第一想法是感觉额外添加一个Haproxy出来不够美观，~~最近时间紧，我就不要去探索了，2333~~~~   之前没看仔细，已经有人搭了只靠nginx转发的了。</p>
 <h5 id="以下所有操作默认都在root用户中执行"><a href="#以下所有操作默认都在root用户中执行" class="headerlink" title="以下所有操作默认都在root用户中执行"></a>以下所有操作默认都在root用户中执行</h5><h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h3 id="1-域名解析"><a href="#1-域名解析" class="headerlink" title="1.域名解析"></a>1.域名解析</h3><p>我的域名是在Cloudflare上解析的，登录Cloudflare，之后创建A记录到我服务器的IP即可。</p>
 <h3 id="2-安装nginx"><a href="#2-安装nginx" class="headerlink" title="2.安装nginx"></a>2.安装nginx</h3><p>最省事的方法是直接用APT或者YUM装</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum update</span><br><span class="line">yum install -y epel-release</span><br><span class="line">yum install -y vim</span><br><span class="line">yum install -y nginx</span><br></pre></td></tr></table></figure>
+
 <p>修改配置<code>vim /etc/nginx/nginx.conf</code>，找到server_name这一项，将localhost改为自己的域名</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server</span><br><span class="line">&#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name example.com;	#记得改成你自己的域名</span><br><span class="line">    .....</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server</span><br><span class="line">&#123;</span><br><span class="line">    listen 80;</span><br><span class="line">    server_name example.com;	#记得改成你自己的域名</span><br><span class="line">    .....</span><br></pre></td></tr></table></figure>
+
 <h3 id="3-申请证书"><a href="#3-申请证书" class="headerlink" title="3.申请证书"></a>3.申请证书</h3><p>要用正常的TLS得有签名的证书才行，这里我们采用certbot来实现 lets encrypt证书的申请和自动续期</p>
 <h4 id="3-1-下载certbot"><a href="#3-1-下载certbot" class="headerlink" title="3.1 下载certbot"></a>3.1 下载certbot</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install certbot python2-certbot-nginx</span><br></pre></td></tr></table></figure>
+
 <h4 id="3-2-选择Certbot的运行方式"><a href="#3-2-选择Certbot的运行方式" class="headerlink" title="3.2 选择Certbot的运行方式"></a>3.2 选择Certbot的运行方式</h4><p>由于我们不需要nginx直接监听443，因此这里建议仅生成证书</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">certbot certonly --nginx</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">certbot certonly --nginx</span><br></pre></td></tr></table></figure>
+
 <p>成功之后证书存在</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssl_certificate /etc/letsencrypt/live/your_domain/fullchain.pem; # managed by Certbot</span><br><span class="line">ssl_certificate_key /etc/letsencrypt/live/your_domain/privkey.pem; # managed by Certbot</span><br></pre></td></tr></table></figure>
-<h4 id="3-3-设定自动续期"><a href="#3-3-设定自动续期" class="headerlink" title="3.3 设定自动续期"></a>3.3 设定自动续期</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo "0 0,12 * * * root python -c 'import random; import time; time.sleep(random.random() * 3600)' &amp;&amp; certbot renew -q" | sudo tee -a /etc/crontab &gt; /dev/null</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-3-设定自动续期"><a href="#3-3-设定自动续期" class="headerlink" title="3.3 设定自动续期"></a>3.3 设定自动续期</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo &quot;0 0,12 * * * root python -c &#x27;import random; import time; time.sleep(random.random() * 3600)&#x27; &amp;&amp; certbot renew -q&quot; | sudo tee -a /etc/crontab &gt; /dev/null</span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="4-配置Haproxy"><a href="#4-配置Haproxy" class="headerlink" title="4.配置Haproxy"></a>4.配置Haproxy</h3><h4 id="4-1-编译openssl-1-1-1"><a href="#4-1-编译openssl-1-1-1" class="headerlink" title="4.1 编译openssl 1.1.1"></a>4.1 编译openssl 1.1.1</h4><h5 id="我们需要openssl1-1-1要支持TLS-1-3"><a href="#我们需要openssl1-1-1要支持TLS-1-3" class="headerlink" title="我们需要openssl1.1.1要支持TLS 1.3"></a>我们需要openssl1.1.1要支持TLS 1.3</h5><p>安装依赖</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum groupinstall 'Development Tools'</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum groupinstall &#x27;Development Tools&#x27;</span><br></pre></td></tr></table></figure>
+
 <p>下载源码</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https://www.openssl.org/source/openssl-1.1.1g.tar.gz</span><br><span class="line">tar -xzf openssl-1.1.1g.tar.gz</span><br></pre></td></tr></table></figure>
+
 <p>编译</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cd openssl-OpenSSL_1_1_1g/</span><br><span class="line"><span class="meta">#</span> 通常可以直接使用config (from Ubuntu 13.04, x64, 本文在CentOS7.3测试通过):</span><br><span class="line">./config --prefix=/opt/openssl-1.1.1 shared</span><br><span class="line"><span class="meta">#</span>编译</span><br><span class="line">make</span><br><span class="line"><span class="meta">#</span>安装</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">cd openssl-OpenSSL_1_1_1g/</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">通常可以直接使用config (from Ubuntu 13.04, x64, 本文在CentOS7.3测试通过):</span></span><br><span class="line">./config --prefix=/opt/openssl-1.1.1 shared</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">编译</span></span><br><span class="line">make</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">安装</span></span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+
+
+
 <h4 id="4-2-编译haproxy"><a href="#4-2-编译haproxy" class="headerlink" title="4.2 编译haproxy"></a>4.2 编译haproxy</h4><p>源码下载</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum install -y make gcc perl pcre-devel zlib-devel pcre2 pcre2-devel</span><br><span class="line">wget http://www.haproxy.org/download/1.9/src/haproxy-1.9.15.tar.gz</span><br><span class="line">tar -zxvf haproxy-1.9.15.tar.gz</span><br><span class="line">cd haproxy-1.9.15/</span><br></pre></td></tr></table></figure>
+
 <p>编译</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">make TARGET=linux2628 CPU=native USE_PCRE2=1 USE_PCRE2_JIT=1 USE_OPENSSL=1 SSL_LIB=/opt/openssl-1.1.1/lib SSL_INC=/opt/openssl-1.1.1/include USE_ZLIB=1</span><br><span class="line">make install</span><br><span class="line"><span class="meta">#</span> Check your sbin path at /usr/local/sbin</span><br><span class="line">cp haproxy /usr/local/sbin/haproxy</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">make TARGET=linux2628 CPU=native USE_PCRE2=1 USE_PCRE2_JIT=1 USE_OPENSSL=1 SSL_LIB=/opt/openssl-1.1.1/lib SSL_INC=/opt/openssl-1.1.1/include USE_ZLIB=1</span><br><span class="line">make install</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">Check your sbin path at /usr/local/sbin</span></span><br><span class="line">cp haproxy /usr/local/sbin/haproxy</span><br></pre></td></tr></table></figure>
+
 <p>创建配置文件</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /etc/haproxy/</span><br><span class="line">vim /etc/haproxy/haproxy.cfg</span><br></pre></td></tr></table></figure>
+
 <p>代码内容如下</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">global</span><br><span class="line">    log /dev/log local0</span><br><span class="line">    log /dev/log local1 notice</span><br><span class="line">    #chroot /var/lib/haproxy</span><br><span class="line">    stats socket /run/haproxy/admin.sock mode 660 level admin expose-fd listeners</span><br><span class="line">    stats timeout 30s</span><br><span class="line">    #user haproxy</span><br><span class="line">    #group haproxy</span><br><span class="line">    daemon</span><br><span class="line">    ca-base /etc/ssl/certs</span><br><span class="line">    crt-base /etc/ssl/private</span><br><span class="line"></span><br><span class="line">    # 仅使用支持 FS 和 AEAD 的加密套件</span><br><span class="line">    ssl-default-bind-ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384</span><br><span class="line">    ssl-default-bind-ciphersuites TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256</span><br><span class="line">    # 禁用 TLS 1.2 之前的 TLS</span><br><span class="line">    ssl-default-bind-options no-sslv3 no-tlsv10 no-tlsv11</span><br><span class="line"></span><br><span class="line">    tune.ssl.default-dh-param 2048</span><br><span class="line"></span><br><span class="line">defaults</span><br><span class="line">    log global</span><br><span class="line">    # 我们需要使用 tcp 模式</span><br><span class="line">    mode tcp</span><br><span class="line">    option dontlognull</span><br><span class="line">    timeout connect 5s</span><br><span class="line">    # 空闲连接等待时间，这里使用与 V2Ray 默认 connIdle 一致的 300s</span><br><span class="line">    timeout client  300s</span><br><span class="line">    timeout server  300s</span><br><span class="line">frontend tls-in</span><br><span class="line">    # 监听 443 tls，tfo 根据自身情况决定是否开启，证书放置于 /etc/ssl/private/example.com.pem</span><br><span class="line">    bind *:443 tfo ssl crt /etc/ssl/private/example.com.pem</span><br><span class="line">    tcp-request inspect-delay 5s</span><br><span class="line">    tcp-request content accept if HTTP</span><br><span class="line">    # 将 HTTP 流量发给 web 后端</span><br><span class="line">    use_backend web if HTTP</span><br><span class="line">    # 将其他流量发给 vmess 后端</span><br><span class="line">    default_backend vmess</span><br><span class="line"></span><br><span class="line">backend web</span><br><span class="line">    server server1 127.0.0.1:8080</span><br><span class="line">  </span><br><span class="line">backend vmess</span><br><span class="line">    server server1 127.0.0.1:40001</span><br></pre></td></tr></table></figure>
+
 <p>HaProxy 的证书和密钥放于同一个文件，与 Caddy 和 Nginx 不同，可以使用命令 <code>cat example.com.crt example.com.key &gt; example.com.pem</code> 合成证书</p>
 <p>修改haproxy系统服务启动脚本：</p>
-<p><code>vim /etc/systemd/system/haproxy.service</code></p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> 确保在[Service]这一栏有这样的一项</span><br><span class="line">[Service]</span><br><span class="line">Environment=LD_LIBRARY_PATH=/opt/openssl-1.1.1/lib/</span><br></pre></td></tr></table></figure>
+<p><code>vim /etc/systemd/system/haproxy.service </code></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">确保在[Service]这一栏有这样的一项</span></span><br><span class="line">[Service]</span><br><span class="line">Environment=LD_LIBRARY_PATH=/opt/openssl-1.1.1/lib/</span><br></pre></td></tr></table></figure>
+
 <p>测试，首先测试配置是否正确，如果发现错误就根据错误改正</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">haproxy -db -f /etc/haproxy/haproxy.cfg</span><br></pre></td></tr></table></figure>
+
 <p>运行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/haproxy start</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/init.d/haproxy start</span><br></pre></td></tr></table></figure>
+
 <p>如果没有任何提示，说明haproxy配置无误，Ctrl+C退出测试。</p>
 <p>启动服务</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start haproxy</span><br><span class="line"><span class="meta">#</span><span class="bash">开机自启</span></span><br><span class="line">systemctl enable haproxy</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start haproxy</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">开机自启</span></span><br><span class="line">systemctl enable haproxy</span><br></pre></td></tr></table></figure>
+
 <p>此时输入<code>netstat -npl |grep 443</code>可以看到haproxy已经开始监听443端口</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN      23824/haproxy</span><br><span class="line">unix  2      [ ACC ]     STREAM     LISTENING     290695   23824/haproxy        /run/haproxy/admin.sock.23823.tmp</span><br></pre></td></tr></table></figure>
+
 <h4 id="Haproxy常见错误排查"><a href="#Haproxy常见错误排查" class="headerlink" title="Haproxy常见错误排查"></a>Haproxy常见错误排查</h4><p>如果提示</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[ALERT] 168/131339 (22782) : Starting frontend GLOBAL: cannot bind UNIX socket [/run/haproxy/admin.sock]</span><br></pre></td></tr></table></figure>
+
 <p>首先检查443端口是否被占用，先把apache，nginx, caddy关掉，之后的章节会提到，我们会将它的监听端口改为其他端口，用haproxy作实际443监听端口。</p>
 <p>使用<code>netstat -npl |grep 443</code>检查是否有进程占用443端口。</p>
-<p>如果确认没有，但仍然报错，则需要手动创建/run/haproxy/这个目录：</p>
+<p>如果确认没有，但仍然报错，则需要手动创建&#x2F;run&#x2F;haproxy&#x2F;这个目录：</p>
 <blockquote>
 <p>Haproxy needs to write to <code>/run/haproxy/admin.sock</code> but it wont create the directory for you. Create the directory <code>/run/haproxy/</code> first or set <code>stats socket</code> to a different path.</p>
 </blockquote>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /run/haproxy/</span><br></pre></td></tr></table></figure>
-<h5 id="请注意"><a href="#请注意" class="headerlink" title="请注意:"></a>请注意:</h5><p><strong><em>1.务必先编译openssl 1.1.1再编译haproxy，可以通过<code>haproxy -vv |grep OpenSSL</code>查看当前编译时候openssl的版本，如果版本号不对，请指定正确版本的openssl路径后重新编译</em></strong></p>
+
+<h5 id="请注意"><a href="#请注意" class="headerlink" title="请注意:"></a>请注意:</h5><p><em><strong>1.务必先编译openssl 1.1.1再编译haproxy，可以通过<code>haproxy -vv |grep OpenSSL</code>查看当前编译时候openssl的版本，如果版本号不对，请指定正确版本的openssl路径后重新编译</strong></em></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">haproxy -vv |grep OpenSSL</span><br><span class="line">----</span><br><span class="line">Built with OpenSSL version : OpenSSL 1.1.1g  21 Apr 2020</span><br><span class="line">Running on OpenSSL version : OpenSSL 1.1.1g  21 Apr 2020</span><br><span class="line">OpenSSL library supports TLS extensions : yes</span><br><span class="line">OpenSSL library supports SNI : yes</span><br><span class="line">OpenSSL library supports : TLSv1.0 TLSv1.1 TLSv1.2 TLSv1.3</span><br></pre></td></tr></table></figure>
+
+
+
 <h3 id="配置v2ray服务端"><a href="#配置v2ray服务端" class="headerlink" title="配置v2ray服务端"></a>配置v2ray服务端</h3><p>安装</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -L -s https://install.direct/go.sh)</span><br></pre></td></tr></table></figure>
 <p>配置<br><code>vim /etc/v2ray/config.json</code></p>
 <p>内容如下:</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"inbounds"</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"protocol"</span>: <span class="string">"vmess"</span>,</span><br><span class="line">            <span class="attr">"listen"</span>: <span class="string">"127.0.0.1"</span>,</span><br><span class="line">            "port": 40001,	# 可以随便写个端口，只要注意一致就行</span><br><span class="line">            "settings": &#123;</span><br><span class="line">                "clients": [</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="attr">"id"</span>: <span class="string">"f2435e5c-9ad9-4367-836a-8341117d0a5f"</span>(请自己生成一个)</span><br><span class="line">                    &#125;</span><br><span class="line">                ]</span><br><span class="line">            &#125;,</span><br><span class="line">            "streamSettings": &#123;</span><br><span class="line">                "network": "tcp"</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line">    "outbounds": [</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">"protocol"</span>: <span class="string">"freedom"</span></span><br><span class="line">        &#125;</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;inbounds&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;protocol&quot;</span><span class="punctuation">:</span> <span class="string">&quot;vmess&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;listen&quot;</span><span class="punctuation">:</span> <span class="string">&quot;127.0.0.1&quot;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;port&quot;</span><span class="punctuation">:</span> <span class="number">40001</span><span class="punctuation">,</span>	# 可以随便写个端口，只要注意一致就行</span><br><span class="line">            <span class="attr">&quot;settings&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">                <span class="attr">&quot;clients&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">                    <span class="punctuation">&#123;</span></span><br><span class="line">                        <span class="attr">&quot;id&quot;</span><span class="punctuation">:</span> <span class="string">&quot;f2435e5c-9ad9-4367-836a-8341117d0a5f&quot;</span>(请自己生成一个)</span><br><span class="line">                    <span class="punctuation">&#125;</span></span><br><span class="line">                <span class="punctuation">]</span></span><br><span class="line">            <span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">            <span class="attr">&quot;streamSettings&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span></span><br><span class="line">                <span class="attr">&quot;network&quot;</span><span class="punctuation">:</span> <span class="string">&quot;tcp&quot;</span></span><br><span class="line">            <span class="punctuation">&#125;</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;outbounds&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">        <span class="punctuation">&#123;</span></span><br><span class="line">            <span class="attr">&quot;protocol&quot;</span><span class="punctuation">:</span> <span class="string">&quot;freedom&quot;</span></span><br><span class="line">        <span class="punctuation">&#125;</span></span><br><span class="line">    <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
 <p>启动服务</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start v2ray</span><br><span class="line"><span class="meta">#</span><span class="bash">开机自启</span></span><br><span class="line">systemctl enable v2ray</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start v2ray</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">开机自启</span></span><br><span class="line">systemctl enable v2ray</span><br></pre></td></tr></table></figure>
+
+
+
 <h2 id="修改nginx服务端配置"><a href="#修改nginx服务端配置" class="headerlink" title="修改nginx服务端配置"></a>修改nginx服务端配置</h2><p><code>vim /etc/nginx/nginx.conf</code></p>
 <p> 在 http{} 里面添加，这样我们只用nginx监听普通8080端口即可，因为haproxy那边本地转发前已经解包成了明文了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">  listen 8080;</span><br><span class="line">  server_name example.com;		#记得改成你自己的域名</span><br><span class="line">  root /var/www/html;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">  listen 8080;</span><br><span class="line">  server_name example.com;		#记得改成你自己的域名</span><br><span class="line">  root /var/www/html;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <p>重启服务端</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart nginx</span><br><span class="line"><span class="meta">#</span><span class="bash"> 开机自启</span></span><br><span class="line">systemctl enable nginx</span><br></pre></td></tr></table></figure>
-<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>到目前为止，所有的服务就已经搭建完毕了，在浏览器里输入 https:// + 你的域名，  如果能够正常访问，说明haproxy和nginx的链路已经通了，基本上就代表可以用了。VMESS的路一般不会出什么问题，这时候就可以用客户端试一下了。</p>
-<p>客户端的配置以及一些延迟测试就不多介绍了，参考<a href="https://guide.v2fly.org/advanced/tcp_tls_web.html" target="_blank" rel="noopener">官方社区</a>吧。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart nginx</span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">开机自启</span></span><br><span class="line">systemctl enable nginx</span><br></pre></td></tr></table></figure>
+
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><p>到目前为止，所有的服务就已经搭建完毕了，在浏览器里输入 https:&#x2F;&#x2F; + 你的域名，  如果能够正常访问，说明haproxy和nginx的链路已经通了，基本上就代表可以用了。VMESS的路一般不会出什么问题，这时候就可以用客户端试一下了。</p>
+<p>客户端的配置以及一些延迟测试就不多介绍了，参考<a href="https://guide.v2fly.org/advanced/tcp_tls_web.html">官方社区</a>吧。</p>
 <h1 id="使用体验"><a href="#使用体验" class="headerlink" title="使用体验"></a>使用体验</h1><p>油管1080P随便拽，4k流畅秒开，可以看奈飞</p>
 <p>油管4k</p>
 <p><img src="https://i.loli.net/2020/06/17/GHRKqbBelJAC34k.png" alt="image.png"><br>Netflix<br><img src="https://i.loli.net/2020/06/17/IHzUFPDVqvuhTWQ.png" alt="image.png"></p>
 <h1 id="下一步计划"><a href="#下一步计划" class="headerlink" title="下一步计划"></a>下一步计划</h1><p>1.整个一套配置下来还是很繁琐的。我打算之后写一套docker-compose，以方便复用。</p>
 <p>2.这个机器有100G硬盘呢，反正暂时又不建站，不如下一步在上面建个图床玩玩</p>
-<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>1.<a href="https://www.cnblogs.com/stulzq/p/9291223.html" target="_blank" rel="noopener">CentOS 7 源码编译安装 Nginx</a></p>
-<p>2.<a href="https://guide.v2fly.org/advanced/tcp_tls_web.html#背景" target="_blank" rel="noopener">TCP + TLS + Web</a></p>
-<p>3.<a href="https://gist.github.com/meanevo/742b61031fdf9ce01e50d4b196a3f31e" target="_blank" rel="noopener">HAproxy指南之haproxy编译安装</a></p>
-<p>4.<a href="https://wiki.openssl.org/index.php/Compilation_and_Installation" target="_blank" rel="noopener">wiki_openssl</a></p>
-<p>5.<a href="https://dnsprivacy.org/wiki/display/DP/Building+HAProxy+so+that+it+can+use+TLSv1.3" target="_blank" rel="noopener">Building HAProxy so that it can use TLSv1.3</a></p>
-<p>6.<a href="https://certbot.eff.org/lets-encrypt/centosrhel7-nginx.html" target="_blank" rel="noopener">Nginx on CentOS/RHEL 7</a></p>
-<p>7.<a href="https://stackoverflow.com/questions/30101075/haproxy-doesnt-start-can-not-bind-unix-socket-run-haproxy-admin-sock" target="_blank" rel="noopener">HAProxy doesn’t start, can not bind UNIX socket</a></p>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><p>1.<a href="https://www.cnblogs.com/stulzq/p/9291223.html">CentOS 7 源码编译安装 Nginx</a></p>
+<p>2.<a href="https://guide.v2fly.org/advanced/tcp_tls_web.html#%E8%83%8C%E6%99%AF">TCP + TLS + Web</a></p>
+<p>3.<a href="https://gist.github.com/meanevo/742b61031fdf9ce01e50d4b196a3f31e">HAproxy指南之haproxy编译安装</a></p>
+<p>4.<a href="https://wiki.openssl.org/index.php/Compilation_and_Installation">wiki_openssl</a></p>
+<p>5.<a href="https://dnsprivacy.org/wiki/display/DP/Building+HAProxy+so+that+it+can+use+TLSv1.3">Building HAProxy so that it can use TLSv1.3</a></p>
+<p>6.<a href="https://certbot.eff.org/lets-encrypt/centosrhel7-nginx.html">Nginx on CentOS&#x2F;RHEL 7</a></p>
+<p>7.<a href="https://stackoverflow.com/questions/30101075/haproxy-doesnt-start-can-not-bind-unix-socket-run-haproxy-admin-sock">HAProxy doesn’t start, can not bind UNIX socket</a></p>
 
       
 
@@ -431,7 +464,7 @@ gitment.render('gitment-ctn')
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 YinZi
+    		&copy; 2026 YinZi
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -551,11 +584,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">IPV6</a>
+                <a href="javascript:void(0)" class="js-tag color3">电子</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Adobe</a>
+                <a href="javascript:void(0)" class="js-tag color5">IPV6</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -563,11 +596,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">电子</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Others</a>
+                <a href="javascript:void(0)" class="js-tag color1">脑子不好史</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -575,7 +604,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">脑子不好史</a>
+                <a href="javascript:void(0)" class="js-tag color1">Adobe</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -584,6 +613,10 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ConfusingMind</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Others</a>
               </li>
             
             <div class="clearfix"></div>
