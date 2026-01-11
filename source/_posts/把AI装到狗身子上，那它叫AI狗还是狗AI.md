@@ -5,7 +5,7 @@ comments: false
 date: 2026-01-11
 categories: 脑子不好史
 tags: ConfusingMind
-urlname: Cogito-ergo-what
+urlname: Cogito ergo what
 ---
 ![1768141493139](1768141493139.png)
 
