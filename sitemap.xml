@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.yinzi.me/post/Cogito%20ergo%20what/</loc>
+    <loc>http://blog.yinzi.me/post/Cogito-ergo-what/</loc>
+    
+    <lastmod>2026-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.yinzi.me/post/I-am-not-me/</loc>
+    
+    <lastmod>2026-01-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.yinzi.me/post/totally-gibberish/</loc>
     
     <lastmod>2026-01-11</lastmod>
     
@@ -56,15 +74,6 @@
   </url>
   
   <url>
-    <loc>http://blog.yinzi.me/post/totally-gibberish/</loc>
-    
-    <lastmod>2026-01-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.yinzi.me/post/funwithIPV6/</loc>
     
     <lastmod>2026-01-11</lastmod>
@@ -75,15 +84,6 @@
   
   <url>
     <loc>http://blog.yinzi.me/post/nogui_linux_docker_vnc_matlab/</loc>
-    
-    <lastmod>2026-01-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.yinzi.me/post/I-am-not-me/</loc>
     
     <lastmod>2026-01-11</lastmod>
     

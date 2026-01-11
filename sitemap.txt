@@ -1,13 +1,13 @@
-http://blog.yinzi.me/post/Cogito%20ergo%20what/
+http://blog.yinzi.me/post/Cogito-ergo-what/
+http://blog.yinzi.me/post/I-am-not-me/
+http://blog.yinzi.me/post/totally-gibberish/
 http://blog.yinzi.me/post/no-autumn-in-beijing/
 http://blog.yinzi.me/others/DELL%20inprison%207447%20%E9%BB%91%E8%8B%B9%E6%9E%9C%E6%8A%98%E8%85%BE%E8%AE%B0%E5%BD%95.html
 http://blog.yinzi.me/post/may-the-fragrant-paddy%E2%80%93be-with-you/
 http://blog.yinzi.me/post/why-people-hate-change/
 http://blog.yinzi.me/post/too-lazy-to-write-a-title/
-http://blog.yinzi.me/post/totally-gibberish/
 http://blog.yinzi.me/post/funwithIPV6/
 http://blog.yinzi.me/post/nogui_linux_docker_vnc_matlab/
-http://blog.yinzi.me/post/I-am-not-me/
 http://blog.yinzi.me/post/learn-einsum-and-einops/
 http://blog.yinzi.me/post/rpi3-install_lcddivers/
 http://blog.yinzi.me/post/knowaboutipv6/
