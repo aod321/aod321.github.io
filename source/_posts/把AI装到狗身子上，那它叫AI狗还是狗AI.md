@@ -1,6 +1,6 @@
 ---
 layout: 脑子不好史
-title: 把AI装到狗身子上，那它叫AI狗还是狗AI？
+title: 把AI装到狗上，那它叫AI狗还是狗AI？
 comments: false
 date: 2026-01-11
 categories: 脑子不好史
@@ -9,7 +9,7 @@ urlname: Cogito ergo what
 ---
 ![1768141493139](1768141493139.png)
 
-## 把AI装到狗身子上，那它叫AI狗还是狗AI？
+## 把AI装到狗上，那它叫AI狗还是狗AI？
 
 ### 一个命名困境
 
